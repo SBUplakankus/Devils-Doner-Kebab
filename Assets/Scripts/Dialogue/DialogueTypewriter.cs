@@ -4,6 +4,7 @@ using PrimeTween;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Dialogue
 {
@@ -19,7 +20,7 @@ namespace Dialogue
         
         [Header("Components")]
         public TextMeshProUGUI dialogueText;
-        public DialogueState _dialogueState;
+        public DialogueState dialogueState;
         private Tween _dialogueTween;
 
         private void Awake()
@@ -29,13 +30,13 @@ namespace Dialogue
         public void SetNextText(string text)
         {
             dialogueText.text = text;
-            _dialogueState = DialogueState.Typing;
+            dialogueState = DialogueState.Typing;
             AnimateText();
         }
         
         private Tween AnimateText()
         {
-            _dialogueTween = TypewriterAnimationWithPunctuations().OnComplete(() => _dialogueState = DialogueState.Finished);
+            _dialogueTween = TypewriterAnimationWithPunctuations().OnComplete(() => dialogueState = DialogueState.Finished);
             return _dialogueTween;
         }
         
@@ -45,7 +46,7 @@ namespace Dialogue
         public void SkipToEnd()
         {
             _dialogueTween.Complete();
-            _dialogueState = DialogueState.Finished;
+            dialogueState = DialogueState.Finished;
         }
         
         /// <summary>
@@ -53,7 +54,7 @@ namespace Dialogue
         /// </summary>
         public void HideDialogueText()
         {
-            _dialogueState = DialogueState.None;
+            dialogueState = DialogueState.None;
             dialogueText.maxVisibleCharacters = 0;
         }
         

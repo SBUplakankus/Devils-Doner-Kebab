@@ -14,6 +14,7 @@ namespace Dialogue
         private ConvoSO _currentConvo;
         private int _convoIndex;
         public bool isTalking;
+        private int _gameIndex;
 
         [Header("Components")] 
         public Color32[] textColours;
@@ -28,27 +29,16 @@ namespace Dialogue
         private void Start()
         {
             _currentConvo = conversations[0];
+            _gameIndex = 0;
         }
-
-        private void OnEnable()
-        {
-            GameDirector.OnNextEvent += HandleNextEvent;
-            PlayerInteraction.OnConversationStart += StartConversation;
-        }
-
-        private void OnDisable()
-        {
-            GameDirector.OnNextEvent -= HandleNextEvent;
-            PlayerInteraction.OnConversationStart -= StartConversation;
-        }
-
+        
         private void Update()
         {
             if (!isTalking) return;
 
             if (!Input.GetKeyDown(KeyCode.E)) return;
             
-            switch (dialogueDisplay._dialogueState)
+            switch (dialogueDisplay.dialogueState)
             {
                 case DialogueTypewriter.DialogueState.Typing:
                     dialogueDisplay.SkipToEnd();
@@ -60,22 +50,12 @@ namespace Dialogue
                     break;
             }
         }
-
-        private void HandleNextEvent(int eventId)
+        
+        
+        public void StartConversation(int id)
         {
-            switch (eventId)
-            {
-                case 0:
-                    _currentConvo = conversations[0];
-                    break;
-                default:
-                    Debug.Log("Null Convo");
-                    break;
-            }
-        }
-
-        private void StartConversation()
-        {
+            _currentConvo = conversations[id];
+            _gameIndex++;
             isTalking = true;
             _convoIndex = 0;
             PlayNextDialogue();
@@ -86,6 +66,7 @@ namespace Dialogue
             isTalking = false;
             dialogueDisplay.HideDialogueText();
             _audioSource.Stop();
+            _gameIndex++;
         }
 
         private void ContinueConvo()

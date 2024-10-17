@@ -48,18 +48,6 @@ namespace Player
             if (other.gameObject.CompareTag("NPC"))
             {
                 var npc = other.GetComponent<NpcController>();
-
-                switch (npc.npcState)
-                {
-                    case NpcController.NpcState.Ordering:
-                        _nextConvo = npc.orderConvo;
-                        break;
-                    case NpcController.NpcState.Waiting:
-                        _nextConvo = npc.goodbyeConvo;
-                        break;
-                    default:
-                        return;
-                }
                 
                 _lookingAt = LookingAt.Npc;
                 HandleInteractionEnter("Talk");
