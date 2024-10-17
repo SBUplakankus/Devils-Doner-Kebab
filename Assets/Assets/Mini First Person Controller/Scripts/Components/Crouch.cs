@@ -123,17 +123,17 @@ public class Crouch : MonoBehaviour
         if (state)
         {
             // Try to add the SpeedOverride to the movement component.
-            if (!movement.speedOverrides.Contains(SpeedOverride))
+            if (!movement.SpeedOverrides.Contains(SpeedOverride))
             {
-                movement.speedOverrides.Add(SpeedOverride);
+                movement.SpeedOverrides.Add(SpeedOverride);
             }
         }
         else
         {
             // Try to remove the SpeedOverride from the movement component.
-            if (movement.speedOverrides.Contains(SpeedOverride))
+            if (movement.SpeedOverrides.Contains(SpeedOverride))
             {
-                movement.speedOverrides.Remove(SpeedOverride);
+                movement.SpeedOverrides.Remove(SpeedOverride);
             }
         }
     }
