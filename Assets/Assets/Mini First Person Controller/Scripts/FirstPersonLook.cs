@@ -9,6 +9,11 @@ public class FirstPersonLook : MonoBehaviour
 
     Vector2 velocity;
     Vector2 frameVelocity;
+    
+    [Header("Conversation")]
+    private bool _isTalking;
+    public Transform talkingTarget;
+    private const float LookAtSpeed = 2f;
 
 
     void Reset()
@@ -25,15 +30,27 @@ public class FirstPersonLook : MonoBehaviour
 
     void Update()
     {
-        // Get smooth velocity.
-        Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
-        frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
-        velocity += frameVelocity;
-        velocity.y = Mathf.Clamp(velocity.y, -90, 90);
+        if (!_isTalking)
+        {
+            var mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+            var rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
+            frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
+            velocity += frameVelocity;
+            velocity.y = Mathf.Clamp(velocity.y, -90, 90);
 
-        // Rotate camera up-down and controller left-right from velocity.
-        transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
-        character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+            transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
+            character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+        }
+        else
+        {
+            var targetDirection = talkingTarget.position - transform.position;
+            var targetRotation = Quaternion.LookRotation(targetDirection);
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * LookAtSpeed);
+
+            var euler = transform.rotation.eulerAngles;
+            character.rotation = Quaternion.Euler(0, euler.y, 0);
+        }
+        
     }
 }

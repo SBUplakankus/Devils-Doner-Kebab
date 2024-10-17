@@ -9,47 +9,26 @@ namespace Dialogue
 {
     public class DialogueTypewriter : MonoBehaviour
     {
-        private enum DialogueState {None, Typing, Finished}
-        
-        [Header("Typewriter Settings")]
-        public float charsPerSecond = 35f;
-        public int punctuationPause = 20;
+        public enum DialogueState {None, Typing, Finished}
+
+        [Header("Typewriter Settings")] 
+        private const float CharsPerSecond = 35f;
+        private const int PunctuationPause = 10;
         private bool _textPlaying;
         private float _typeDuration;
         
         [Header("Components")]
         public TextMeshProUGUI dialogueText;
-        private DialogueState _dialogueState;
+        public DialogueState _dialogueState;
         private Tween _dialogueTween;
 
         private void Awake()
         {
             dialogueText.maxVisibleCharacters = 0;
         }
-
-        private void Update()
+        public void SetNextText(string text)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                switch (_dialogueState)
-                {
-                    case DialogueState.None:
-                        SetNextText();
-                        break;
-                    case DialogueState.Typing:
-                        SkipToEnd();
-                        break;
-                    case DialogueState.Finished:
-                        HideDialogueText();
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
-        }
-
-        private void SetNextText()
-        {
+            dialogueText.text = text;
             _dialogueState = DialogueState.Typing;
             AnimateText();
         }
@@ -60,12 +39,30 @@ namespace Dialogue
             return _dialogueTween;
         }
         
+        /// <summary>
+        /// Skip to the end of the dialogue typing
+        /// </summary>
+        public void SkipToEnd()
+        {
+            _dialogueTween.Complete();
+            _dialogueState = DialogueState.Finished;
+        }
+        
+        /// <summary>
+        /// Hide the dialogue text
+        /// </summary>
+        public void HideDialogueText()
+        {
+            _dialogueState = DialogueState.None;
+            dialogueText.maxVisibleCharacters = 0;
+        }
+        
         #region TypewriterAnimationWithPunctuations
         /// <summary>Typewriter animation which inserts pauses after punctuation marks.</summary>
         private Tween TypewriterAnimationWithPunctuations() {
             dialogueText.ForceMeshUpdate();
             RemapWithPunctuations(dialogueText, int.MaxValue, out int remappedCount, out _);
-            var duration = remappedCount / charsPerSecond;
+            var duration = remappedCount / CharsPerSecond;
             return Tween.Custom(this, 0f, remappedCount, duration, (t, x) => t.UpdateMaxVisibleCharsWithPunctuation(x), Ease.Linear);
         }
 
@@ -95,31 +92,13 @@ namespace Dialogue
                 var nextIndex = i + 1;
                 if (nextIndex != count && !IsPunctuationChar(characterInfos[nextIndex].character)) {
                     // add pause after the last subsequent punctuation character
-                    remappedCount += Mathf.Max(0, punctuationPause);
+                    remappedCount += Mathf.Max(0, PunctuationPause);
                 }
             }
 
             bool IsPunctuationChar(char c) {
                 return ".,:;!?".IndexOf(c) != -1;
             }
-        }
-        
-        /// <summary>
-        /// Skip to the end of the dialogue typing
-        /// </summary>
-        private void SkipToEnd()
-        {
-            _dialogueTween.Complete();
-            _dialogueState = DialogueState.Finished;
-        }
-        
-        /// <summary>
-        /// Hide the dialogue text
-        /// </summary>
-        public void HideDialogueText()
-        {
-            _dialogueState = DialogueState.None;
-            dialogueText.maxVisibleCharacters = 0;
         }
         #endregion
     }
