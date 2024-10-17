@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Value: 1
   m_Grid:
     m_OverrideState: 1
-    m_Value: 0.498
+    m_Value: 1
   m_Roundness:
     m_OverrideState: 1
     m_Value: 1
@@ -117,6 +117,9 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 0}
     hdr: 0
-  m_Posterize:
+  m_Palette:
     m_OverrideState: 0
-    m_Value: 15
+    m_Value: {fileID: 0}
+  m_Impact:
+    m_OverrideState: 0
+    m_Value: 0
