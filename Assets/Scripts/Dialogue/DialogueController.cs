@@ -19,12 +19,13 @@ namespace Dialogue
 
         [Header("Components")] 
         public Color32[] textColours;
-        public DialogueTypewriter dialogueDisplay;
+        private DialogueTypewriter _dialogueDisplay;
         private AudioSource _audioSource;
 
         private void Awake()
         {
             _audioSource = GetComponent<AudioSource>();
+            _dialogueDisplay = GetComponent<DialogueTypewriter>();
         }
 
         private void Start()
@@ -38,10 +39,10 @@ namespace Dialogue
 
             if (!Input.GetKeyDown(KeyCode.E)) return;
             
-            switch (dialogueDisplay.dialogueState)
+            switch (_dialogueDisplay.dialogueState)
             {
                 case DialogueTypewriter.DialogueState.Typing:
-                    dialogueDisplay.SkipToEnd();
+                    _dialogueDisplay.SkipToEnd();
                     break;
                 case DialogueTypewriter.DialogueState.Finished:
                     ContinueConvo();
@@ -63,7 +64,7 @@ namespace Dialogue
         private void EndConversation()
         {
             isTalking = false;
-            dialogueDisplay.HideDialogueText();
+            _dialogueDisplay.HideDialogueText();
             _audioSource.Stop();
             OnDialogueEnd?.Invoke();
         }
@@ -84,8 +85,8 @@ namespace Dialogue
 
         private void PlayNextDialogue()
         {
-            dialogueDisplay.SetNextText(_currentConvo.dialogueTree[_convoIndex]);
-            dialogueDisplay.dialogueText.color = textColours[_currentConvo.dialogueSpeaker[_convoIndex]];
+            _dialogueDisplay.SetNextText(_currentConvo.dialogueTree[_convoIndex]);
+            _dialogueDisplay.dialogueText.color = textColours[_currentConvo.dialogueSpeaker[_convoIndex]];
             _audioSource.PlayOneShot(_currentConvo.dialogueAudio[_convoIndex]);
         }
     }

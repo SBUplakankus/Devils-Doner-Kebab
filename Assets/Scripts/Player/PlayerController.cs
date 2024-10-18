@@ -13,7 +13,7 @@ namespace Player
         
         [Header("Movement")]
         public Transform[] movePoints;
-        public Transform currentTarget;
+        private Transform _currentTarget;
         
         [Header("Looking")]
         public Transform[] lookTargets;
@@ -39,8 +39,8 @@ namespace Player
         {
             if (_isMoving)
             {
-                _navMeshAgent.SetDestination(currentTarget.position);
-                var distance = Vector3.Distance(transform.position, currentTarget.position);
+                _navMeshAgent.SetDestination(_currentTarget.position);
+                var distance = Vector3.Distance(transform.position, _currentTarget.position);
                 if (distance < 0.1f)
                 {
                     OnMovementEnd?.Invoke();
@@ -66,7 +66,7 @@ namespace Player
             _isLooking = false;
             _navMeshAgent.enabled = true;
             _navMeshAgent.destination = movePoints[pos].position;
-            currentTarget = movePoints[pos];
+            _currentTarget = movePoints[pos];
             _isMoving = true;
         }
         
