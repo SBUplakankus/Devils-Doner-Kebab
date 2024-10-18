@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca3c43c74d52d9247859f145f348b8ba, type: 3}
-  m_Name: 2
+  m_Name: Harvest
   m_EditorClassIdentifier: 
   dialogueTree:
-  - Devils Doner Kebab
-  - Well that's a stupid name
-  - But it'll do.
-  - Im starvin...
-  dialogueSpeaker: 00000000000000000000000000000000
+  - Yea sure why not. It is haloween brother man.
+  - 'Excellent choice my precious little primrose. '
+  - Now just hold still for me a second so I can..........
+  dialogueSpeaker: 000000000200000002000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}

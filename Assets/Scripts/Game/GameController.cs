@@ -13,10 +13,11 @@ namespace Player
         public PlayerController player;
         public DialogueController dialogue;
         public ChoiceController choice;
+        public NpcSystem npc;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _drinkChoice;
-        private ChoiceMade _meetingChoice;
+        private ChoiceMade _weirdoChoice;
         
 
         private int _gameStage;
@@ -32,6 +33,7 @@ namespace Player
             DialogueController.OnDialogueEnd += ProgressGame;
             PlayerController.OnMovementEnd += ProgressGame;
             ChoiceController.OnChoiceMade += HandleChoiceMade;
+            NpcController.OnMovementEnd += ProgressGame;
         }
 
         private void OnDisable()
@@ -39,6 +41,7 @@ namespace Player
             DialogueController.OnDialogueEnd -= ProgressGame;
             DialogueController.OnDialogueEnd -= ProgressGame;
             ChoiceController.OnChoiceMade -= HandleChoiceMade;
+            NpcController.OnMovementEnd -= ProgressGame;
         }
 
         private void ProgressGame()
@@ -73,20 +76,48 @@ namespace Player
                             throw new ArgumentOutOfRangeException();
                     }
                     break;
+                case 6:
+                    EventSeven();
+                    break;
+                case 7:
+                    EventEight();
+                    break;
+                case 8:
+                    EventNine();
+                    break;
+                case 9:
+                    EventTen();
+                    break;
+                case 10:
+                    switch (_weirdoChoice)
+                    {
+                        case ChoiceMade.Option1:
+                            EventEleven();
+                            break;
+                        case ChoiceMade.Option2:
+                            GetHarvested();
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
+                    break;
+                case 11:
+                    EventTwelve();
+                    break;
             }
 
             _gameStage++;
         }
 
-        private void HandleChoiceMade(int choice)
+        private void HandleChoiceMade(int choiceInt)
         {
             switch (_gameStage)
             {
                 case 6:
-                    if (choice == 0)
-                        _orderChoice = ChoiceMade.Option1;
-                    else
-                        _orderChoice = ChoiceMade.Option2;
+                    _orderChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
+                    break;
+                case 11:
+                    _weirdoChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
                     break;
             }
             ProgressGame();
@@ -131,7 +162,42 @@ namespace Player
         
         private void EventSeven()
         {
-            
+            player.UpdateMovePosition(3);
+            npc.SpawnNpc(0,0);
+        }
+
+        private void EventEight()
+        {
+            npc.MoveNpc(0, 2);
+            player.LookAtTarget(2);
+        }
+
+        private void EventNine()
+        {
+            dialogue.StartConversation(4);
+            npc.LookAtPlayer(0);
+            player.LookAtTarget(3);
+        }
+
+        private void EventTen()
+        {
+            choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Tell him to fuck off.");
+        }
+
+        private void GetHarvested()
+        {
+            dialogue.StartConversation(6);
+        }
+
+        private void EventEleven()
+        {
+            dialogue.StartConversation(5);
+        }
+
+        private void EventTwelve()
+        {
+            npc.MoveNpc(0, 4);
+            player.LookAtTarget(3);
         }
     }
 }

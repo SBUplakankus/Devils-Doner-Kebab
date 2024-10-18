@@ -1,23 +1,21 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Player
+public class NpcController : MonoBehaviour
 {
-    public class PlayerController : MonoBehaviour
-    {
-        public static event Action OnMovementEnd;
+    public static event Action OnMovementEnd;
         
         [Header("Components")]
         private NavMeshAgent _navMeshAgent;
         
         [Header("Movement")]
-        public Transform[] movePoints;
         private Transform _currentTarget;
-        
-        [Header("Looking")]
-        public Transform[] lookTargets;
-        private Transform _currentLook;
+
+        [Header("Looking")] 
+        public Transform player;
         
         [Header("Variables")]
         private bool _isMoving;
@@ -31,7 +29,6 @@ namespace Player
 
         private void Start()
         {
-            transform.position = movePoints[0].position;
             _isMoving = false;
         }
 
@@ -49,7 +46,7 @@ namespace Player
             }
             else if (_isLooking)
             {
-                var direction = _currentLook.position - transform.position;
+                var direction = player.position - transform.position;
                 var targetRotation = Quaternion.LookRotation(direction);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
             }
@@ -58,27 +55,42 @@ namespace Player
         }
         
         /// <summary>
+        /// Spawn in the NPC
+        /// </summary>
+        /// <param name="spawnPoint">Spawn Point</param>
+        public void SpawnNpc(Transform spawnPoint)
+        {
+            transform.position = spawnPoint.position;
+        }
+        
+        /// <summary>
+        /// Remove the NPC
+        /// </summary>
+        public void RemoveNpc()
+        {
+            gameObject.SetActive(false);
+        }
+        
+        /// <summary>
         /// Update the movement position of the camera
         /// </summary>
         /// <param name="pos">ID of the next Position</param>
-        public void UpdateMovePosition(int pos)
+        public void UpdateMovePosition(Transform movePoint)
         {
             _isLooking = false;
             _navMeshAgent.enabled = true;
-            _navMeshAgent.destination = movePoints[pos].position;
-            _currentTarget = movePoints[pos];
+            _navMeshAgent.destination = movePoint.position;
+            _currentTarget = movePoint;
             _isMoving = true;
         }
         
         /// <summary>
         /// Make the camera look at a target
         /// </summary>
-        /// <param name="target">Target to Look At</param>
-        public void LookAtTarget(int target)
+        public void LookAtPlayer()
         {
             _isLooking = true;
             _navMeshAgent.enabled = false;
-            _currentLook = lookTargets[target];
         }
-    }
+    
 }
