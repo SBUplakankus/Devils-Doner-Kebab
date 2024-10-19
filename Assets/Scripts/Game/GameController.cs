@@ -217,6 +217,7 @@ namespace Player
 
         private void EventNine()
         {
+            player.rotationSpeed = 3f;
             dialogue.StartConversation(4);
             npc.LookAtPlayer(0);
             player.LookAtTarget(3);
@@ -241,12 +242,13 @@ namespace Player
         {
             //Weirdo Leaves Scene 
             npc.MoveNpc(0, 0);
-            player.LookAtTarget(1);
             npc.SpawnNpc(3,1);
         }
 
         private void EventThirteen()
         {
+            player.rotationSpeed = 1f;
+            player.LookAtTarget(1);
             //Look to Order man and ask when ready
             npc.SetNpcToLeaving(0);
             npc.MoveNpc(0, 5);

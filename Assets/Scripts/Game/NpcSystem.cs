@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Player
 {
@@ -8,7 +10,12 @@ namespace Player
         public Transform[] npcPoints;
 
         public NpcController weirdo, magic, chef, demon;
-        
+
+        private void Start()
+        {
+            demon.GetComponent<NavMeshAgent>().enabled = false;
+        }
+
         /// <summary>
         /// Spawn in a NPC
         /// </summary>
