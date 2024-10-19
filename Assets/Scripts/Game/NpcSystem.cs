@@ -9,7 +9,7 @@ namespace Player
         public Transform[] npcSpawns;
         public Transform[] npcPoints;
 
-        public NpcController weirdo, magic, chef, demon;
+        public NpcController weirdo, magic, chef, demon, heretic;
 
         private void Start()
         {
@@ -37,6 +37,9 @@ namespace Player
                 case 3:
                     demon.SpawnNpc(npcSpawns[point]);
                     break;
+                case 4:
+                    heretic.SpawnNpc(npcSpawns[point]);
+                    break;
             }
         }
         public void MoveNpc(int npc, int point)
@@ -54,6 +57,9 @@ namespace Player
                     break;
                 case 3:
                     demon.UpdateMovePosition(npcPoints[point]);
+                    break;
+                case 4:
+                    heretic.UpdateMovePosition(npcPoints[point]);
                     break;
             }
         }
@@ -92,6 +98,9 @@ namespace Player
                     break;
                 case 3:
                     demon.LookAtPlayer();
+                    break;
+                case 4:
+                    heretic.LookAtPlayer();
                     break;
             }
         }

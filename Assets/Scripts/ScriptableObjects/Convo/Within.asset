@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca3c43c74d52d9247859f145f348b8ba, type: 3}
-  m_Name: 9
+  m_Name: Within
   m_EditorClassIdentifier: 
   dialogueTree:
-  - JESUS
-  - Who is this guy?
-  dialogueSpeaker: 0000000000000000
+  - Yea sure, that sounds pretty cool.
+  - Marvelous choice sir.
+  - Now just close your eyes and when you reopen them, all shall be revealed.
+  dialogueSpeaker: 000000000200000002000000
   dialogueAudio:
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}

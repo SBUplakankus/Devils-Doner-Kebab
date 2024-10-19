@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca3c43c74d52d9247859f145f348b8ba, type: 3}
-  m_Name: 1
+  m_Name: TakeKebab
   m_EditorClassIdentifier: 
   dialogueTree:
-  - ............
-  - Oh brother has it been a long night or what..
-  - I could devour a kebab right now.... This place looks pretty good...
-  dialogueSpeaker: 000000000000000000000000
+  - Smell delicious boss, thank you very much.
+  - Have good night sir, hope see you again soon.
+  dialogueSpeaker: 0000000001000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}

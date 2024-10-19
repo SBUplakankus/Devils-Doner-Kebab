@@ -14,7 +14,7 @@ namespace Dialogue
 
         [Header("Typewriter Settings")] 
         private const float CharsPerSecond = 35f;
-        private const int PunctuationPause = 10;
+        private const int PunctuationPause = 20;
         private bool _textPlaying;
         private float _typeDuration;
         
