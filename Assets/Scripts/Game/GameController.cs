@@ -16,7 +16,7 @@ namespace Player
         public NpcSystem npc;
 
         private ChoiceMade _orderChoice;
-        private ChoiceMade _drinkChoice;
+        private ChoiceMade _offerChoice;
         private ChoiceMade _weirdoChoice;
         
 
@@ -104,6 +104,40 @@ namespace Player
                 case 11:
                     EventTwelve();
                     break;
+                case 12:
+                    EventThirteen();
+                    break;
+                case 13:
+                    EventFourteen();
+                    break;
+                case 14:
+                    EventFifteen();
+                    break;
+                case 15:
+                    EventSixteen();
+                    break;
+                case 16:
+                    EventSeventeen();
+                    break;
+                case 17:
+                    EventEighteen();
+                    break;
+                case 18:
+                    EventNineteen();
+                    break;
+                case 19:
+                    switch (_weirdoChoice)
+                    {
+                        case ChoiceMade.Option1:
+                            EventTwenty();
+                            break;
+                        case ChoiceMade.Option2:
+                            SeeWithin();
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
+                    break;
             }
 
             _gameStage++;
@@ -119,12 +153,17 @@ namespace Player
                 case 11:
                     _weirdoChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
                     break;
+                case 19:
+                    _offerChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
+                    break;
             }
             ProgressGame();
         }
-        
+
+        #region Intro
         private void EventOne()
         {
+            player.rotationSpeed = 1f;
             dialogue.StartConversation(0);
         }
 
@@ -143,7 +182,9 @@ namespace Player
         {
             player.UpdateMovePosition(2);
         }
+        #endregion
 
+        #region Order
         private void EventFive()
         {
             player.LookAtTarget(1);
@@ -165,7 +206,9 @@ namespace Player
             player.UpdateMovePosition(3);
             npc.SpawnNpc(0,0);
         }
-
+        #endregion
+        
+        #region Weirdo
         private void EventEight()
         {
             npc.MoveNpc(0, 2);
@@ -178,7 +221,7 @@ namespace Player
             npc.LookAtPlayer(0);
             player.LookAtTarget(3);
         }
-
+        
         private void EventTen()
         {
             choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Tell him to fuck off.");
@@ -193,11 +236,76 @@ namespace Player
         {
             dialogue.StartConversation(5);
         }
-
+        
         private void EventTwelve()
         {
-            npc.MoveNpc(0, 4);
-            player.LookAtTarget(3);
+            //Weirdo Leaves Scene 
+            npc.MoveNpc(0, 0);
+            player.LookAtTarget(1);
+            npc.SpawnNpc(3,1);
         }
+
+        private void EventThirteen()
+        {
+            //Look to Order man and ask when ready
+            npc.SetNpcToLeaving(0);
+            npc.MoveNpc(0, 5);
+            dialogue.StartConversation(7);
+        }
+        #endregion
+
+        #region Offer
+        private void EventFourteen()
+        {
+            //Look at devil man
+            player.LookAtTarget(4);
+            dialogue.StartConversation(8);
+            npc.SpawnNpc(1,2);
+            
+        }
+        
+        private void EventFifteen()
+        {
+            //Move to window
+            npc.MoveNpc(1,3);
+        }
+
+        private void EventSixteen()
+        {
+            npc.LookAtPlayer(1);
+            player.rotationSpeed = 4f;
+            //Bang on window see offer man
+            player.LookAtTarget(5);
+            dialogue.StartConversation(9);
+        }
+
+        private void EventSeventeen()
+        {
+            //Offer man comes inside
+            npc.MoveNpc(1, 4);
+        }
+
+        private void EventEighteen()
+        {
+            //Offer convo
+            npc.LookAtPlayer(1);
+            dialogue.StartConversation(10);
+        }
+
+        private void EventNineteen()
+        {
+            choice.SetChoices("See what lies beneath", "Sounds cool", "Nah I'm good");
+        }
+
+        private void EventTwenty()
+        {
+            Debug.Log("Progress 20");
+        }
+
+        private void SeeWithin()
+        {
+            Debug.Log("See Within");
+        }
+        #endregion
     }
 }

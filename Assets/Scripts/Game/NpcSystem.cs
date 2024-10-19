@@ -51,6 +51,25 @@ namespace Player
             }
         }
 
+        public void SetNpcToLeaving(int npc)
+        {
+            switch (npc)
+            {
+                case 0:
+                    weirdo.isLeaving = true;
+                    break;
+                case 1:
+                    magic.isLeaving = true;
+                    break;
+                case 2:
+                    chef.isLeaving = true;
+                    break;
+                case 3:
+                    demon.isLeaving = true;
+                    break;
+            }
+        }
+
         public void LookAtPlayer(int npc)
         {
             switch (npc)

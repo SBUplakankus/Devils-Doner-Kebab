@@ -21,10 +21,12 @@ namespace Dialogue
         [Header("Components")]
         public TextMeshProUGUI dialogueText;
         public DialogueState dialogueState;
+        private AudioSource _audioSource;
         private Tween _dialogueTween;
 
         private void Awake()
         {
+            _audioSource = GetComponent<AudioSource>();
             dialogueText.maxVisibleCharacters = 0;
         }
         public void SetNextText(string text)
@@ -47,6 +49,7 @@ namespace Dialogue
         {
             _dialogueTween.Complete();
             dialogueState = DialogueState.Finished;
+            _audioSource.Stop();
         }
         
         /// <summary>

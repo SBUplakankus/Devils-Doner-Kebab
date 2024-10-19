@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 namespace Player
 {
@@ -22,7 +23,7 @@ namespace Player
         [Header("Variables")]
         private bool _isMoving;
         private bool _isLooking;
-        private float _rotationSpeed = 1f;
+        public float rotationSpeed = 1f;
 
         private void Awake()
         {
@@ -51,7 +52,7 @@ namespace Player
             {
                 var direction = _currentLook.position - transform.position;
                 var targetRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             }
             
                 
