@@ -85,6 +85,28 @@ namespace Player
                     break;
             }
         }
+        
+        public void PlayNpcScream(int npc)
+        {
+            switch (npc)
+            {
+                case 0:
+                    weirdo.PlayNpcScream();
+                    break;
+                case 1:
+                    magic.PlayNpcScream();
+                    break;
+                case 2:
+                    chef.PlayNpcScream();
+                    break;
+                case 3:
+                    demon.PlayNpcScream();
+                    break;
+                case 4:
+                    heretic.PlayNpcScream();
+                    break;
+            }
+        }
 
         public void DisableDemonChefNav()
         {

@@ -495,6 +495,7 @@ namespace Player
         private void ChipsAttack()
         {
             npc.NpcAttacking(3);
+            npc.PlayNpcScream(3);
             player.LookAtTarget(4);
             npc.MoveNpc(3, 6);
         }
@@ -520,6 +521,7 @@ namespace Player
         private void HereticAttack()
         {
             npc.NpcAttacking(4);
+            npc.PlayNpcScream(4);
             npc.MoveNpc(4, 6);
         }
         

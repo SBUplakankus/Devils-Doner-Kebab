@@ -11,6 +11,7 @@ public class NpcController : MonoBehaviour
         [Header("Components")]
         private NavMeshAgent _navMeshAgent;
         private Animator _animator;
+        private AudioSource _audioSource;
         
         [Header("Movement")]
         private Transform _currentTarget;
@@ -29,6 +30,7 @@ public class NpcController : MonoBehaviour
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _animator = GetComponent<Animator>();
+            _audioSource = GetComponent<AudioSource>();
         }
 
         private void Start()
@@ -43,7 +45,6 @@ public class NpcController : MonoBehaviour
             {
                 _navMeshAgent.SetDestination(_currentTarget.position);
                 var distance = Vector3.Distance(transform.position, _currentTarget.position);
-                Debug.Log(distance);
                 if (distance < 0.25f && !isAttacking)
                 {
                     if(isLeaving)
@@ -55,7 +56,7 @@ public class NpcController : MonoBehaviour
                         _isMoving = false;
                     }
                 }
-                else if (distance < 1.5f && isAttacking)
+                else if (distance < 2f && isAttacking)
                 {
                     OnMovementEnd?.Invoke();
                 }
@@ -68,6 +69,11 @@ public class NpcController : MonoBehaviour
             }
             
                 
+        }
+
+        public void PlayNpcScream()
+        {
+            _audioSource.Play();
         }
         
         /// <summary>
