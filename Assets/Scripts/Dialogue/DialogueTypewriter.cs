@@ -13,13 +13,12 @@ namespace Dialogue
         public enum DialogueState {None, Typing, Finished}
 
         [Header("Typewriter Settings")] 
-        private const float CharsPerSecond = 35f;
-        private const int PunctuationPause = 20;
+        private float _charsPerSecond = 35f;
+        private int _punctuationPause = 20;
         private bool _textPlaying;
         private float _typeDuration;
         
-        [Header("Components")]
-        public TextMeshProUGUI dialogueText;
+        public TextMeshProUGUI dialogueText, ending, info;
         public DialogueState dialogueState;
         private AudioSource _audioSource;
         private Tween _dialogueTween;
@@ -35,10 +34,23 @@ namespace Dialogue
             dialogueState = DialogueState.Typing;
             AnimateText();
         }
+
+        public void SetEndingText()
+        {
+            AnimateEndingText();
+        }
+
+        private Tween AnimateEndingText()
+        {
+            _charsPerSecond = 15;
+            var endingAnim = TypewriterAnimationWithPunctuations(ending)
+                .OnComplete(() => TypewriterAnimationWithPunctuations(info));
+            return endingAnim;
+        }
         
         private Tween AnimateText()
         {
-            _dialogueTween = TypewriterAnimationWithPunctuations().OnComplete(() => dialogueState = DialogueState.Finished);
+            _dialogueTween = TypewriterAnimationWithPunctuations(dialogueText).OnComplete(() => dialogueState = DialogueState.Finished);
             return _dialogueTween;
         }
         
@@ -63,19 +75,19 @@ namespace Dialogue
         
         #region TypewriterAnimationWithPunctuations
         /// <summary>Typewriter animation which inserts pauses after punctuation marks.</summary>
-        private Tween TypewriterAnimationWithPunctuations() {
-            dialogueText.ForceMeshUpdate();
-            RemapWithPunctuations(dialogueText, int.MaxValue, out int remappedCount, out _);
-            var duration = remappedCount / CharsPerSecond;
-            return Tween.Custom(this, 0f, remappedCount, duration, (t, x) => t.UpdateMaxVisibleCharsWithPunctuation(x), Ease.Linear);
+        private Tween TypewriterAnimationWithPunctuations(TMP_Text text) {
+            text.ForceMeshUpdate();
+            RemapWithPunctuations(text, int.MaxValue, out int remappedCount, out _);
+            var duration = remappedCount / _charsPerSecond;
+            return Tween.Custom(this, 0f, remappedCount, duration, (t, x) => t.UpdateMaxVisibleCharsWithPunctuation(x, text), Ease.Linear);
         }
 
-        private void UpdateMaxVisibleCharsWithPunctuation(float progress)
+        private void UpdateMaxVisibleCharsWithPunctuation(float progress, TMP_Text text)
         {
             var remappedEndIndex = Mathf.RoundToInt(progress);
-            RemapWithPunctuations(dialogueText, remappedEndIndex, out _, out int visibleCharsCount);
-            if (dialogueText.maxVisibleCharacters != visibleCharsCount) {
-                dialogueText.maxVisibleCharacters = visibleCharsCount;
+            RemapWithPunctuations(text, remappedEndIndex, out _, out int visibleCharsCount);
+            if (text.maxVisibleCharacters != visibleCharsCount) {
+                text.maxVisibleCharacters = visibleCharsCount;
                 // play keyboard typing sound here if needed
             }
         }
@@ -96,7 +108,7 @@ namespace Dialogue
                 var nextIndex = i + 1;
                 if (nextIndex != count && !IsPunctuationChar(characterInfos[nextIndex].character)) {
                     // add pause after the last subsequent punctuation character
-                    remappedCount += Mathf.Max(0, PunctuationPause);
+                    remappedCount += Mathf.Max(0, _punctuationPause);
                 }
             }
 

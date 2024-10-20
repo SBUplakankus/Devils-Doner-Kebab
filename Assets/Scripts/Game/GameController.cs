@@ -1,5 +1,6 @@
 using System;
 using Dialogue;
+using Game;
 using PrimeTween;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace Player
         public DialogueController dialogue;
         public ChoiceController choice;
         public NpcSystem npc;
+        public EndScreenController endScreen;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _offerChoice;
@@ -477,17 +479,17 @@ namespace Player
     
         private void MainLineEnding()
         {
-            Debug.Log("Game Over");
+            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab");
         }
 
         private void ChipsEnding()
         {
-            Debug.Log("Chips");
+            endScreen.DisplayEndScreen("Ending Three", "You ordered Garlic Cheese Chips and got murdered by the kitchen staff");
         }
 
         private void WeirdoEnding()
         {
-            Debug.Log("Weirdo");
+            endScreen.DisplayEndScreen("Ending Four", "You let the strange man harvest your organs for his own personal pleasure");
         }
         
         private void HereticAppearance()
@@ -499,7 +501,7 @@ namespace Player
         }
         private void HereticEnding()
         {
-            Debug.Log("Heresy");
+            endScreen.DisplayEndScreen("Ending Five", "You were executed by the harbinger of doner kebabs on accounts of heresy");
         }
         #endregion
     
