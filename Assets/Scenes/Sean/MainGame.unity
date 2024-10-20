@@ -6727,7 +6727,7 @@ PrefabInstance:
     - target: {fileID: 2974379844727665143, guid: d303abe2b70d1dd42b5c397c8c53e1f0,
         type: 3}
       propertyPath: conversations.Array.size
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2974379844727665143, guid: d303abe2b70d1dd42b5c397c8c53e1f0,
         type: 3}
@@ -6806,6 +6806,12 @@ PrefabInstance:
       propertyPath: conversations.Array.data[15]
       value: 
       objectReference: {fileID: 11400000, guid: 08bd2add36a7e7c4f82f51012424ef05,
+        type: 2}
+    - target: {fileID: 2974379844727665143, guid: d303abe2b70d1dd42b5c397c8c53e1f0,
+        type: 3}
+      propertyPath: conversations.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: 30cfe327ef40dc448922cd535212a628,
         type: 2}
     - target: {fileID: 3732144611607921221, guid: d303abe2b70d1dd42b5c397c8c53e1f0,
         type: 3}

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ee7684-0b51-4c35-9293-77c782be36dc" name="Changes" comment="Revert &quot;S&quot;&#10;&#10;This reverts commit fdfe94c4">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/Heretic.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/Heretic.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTypewriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueTypewriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ChoiceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/ChoiceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +117,7 @@
       <workItem from="1729209901536" duration="3820000" />
       <workItem from="1729253964606" duration="4477000" />
       <workItem from="1729277977385" duration="22483000" />
-      <workItem from="1729357499520" duration="24013000" />
+      <workItem from="1729357499520" duration="26549000" />
     </task>
     <servers />
   </component>

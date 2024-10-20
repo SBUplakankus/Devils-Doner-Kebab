@@ -23,13 +23,11 @@ namespace Player
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                Debug.Log("1");
                 OnChoiceMade?.Invoke(0);
                 HideChoiceDisplay();
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                Debug.Log("2");
                 OnChoiceMade?.Invoke(1);
                 HideChoiceDisplay();
             }

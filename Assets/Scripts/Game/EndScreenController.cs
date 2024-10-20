@@ -51,7 +51,7 @@ namespace Game
 
             fadeScreen.color = endColor;
             typewriter.SetEndingText();
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(9);
             SceneManager.LoadScene(0);
         }
     }

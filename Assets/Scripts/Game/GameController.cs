@@ -152,7 +152,6 @@ namespace Player
                                 break;
                             case ChoiceMade.Option2:
                                 EventTwenty();
-                                _ending = Ending.Normal;
                                 break;
                             default:
                                 throw new ArgumentOutOfRangeException();
@@ -210,7 +209,7 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
-                            
+                            WithinEnding();
                             break;
                     }
                     break;
@@ -256,10 +255,10 @@ namespace Player
                 case 10:
                     _weirdoChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
                     break;
-                case 18:
+                case 19:
                     _offerChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
                     break;
-                case 25:
+                case 24:
                     _orderChoice = choiceInt == 0 ? ChoiceMade.Option1 : ChoiceMade.Option2;
                     break;
             }
@@ -479,17 +478,17 @@ namespace Player
     
         private void MainLineEnding()
         {
-            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab");
+            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the piss.");
         }
 
         private void ChipsEnding()
         {
-            endScreen.DisplayEndScreen("Ending Three", "You ordered Garlic Cheese Chips and got murdered by the kitchen staff");
+            endScreen.DisplayEndScreen("Ending Three", "You ordered Garlic Cheese Chips and got murdered by the kitchen staff.");
         }
 
         private void WeirdoEnding()
         {
-            endScreen.DisplayEndScreen("Ending Four", "You let the strange man harvest your organs for his own personal pleasure");
+            endScreen.DisplayEndScreen("Ending Four", "You let the strange man harvest your organs for his own personal pleasure.");
         }
         
         private void HereticAppearance()
@@ -501,7 +500,12 @@ namespace Player
         }
         private void HereticEnding()
         {
-            endScreen.DisplayEndScreen("Ending Five", "You were executed by the harbinger of doner kebabs on accounts of heresy");
+            endScreen.DisplayEndScreen("Ending Five", "You were executed by the harbinger of the devils doner on accounts of heresy.");
+        }
+
+        private void WithinEnding()
+        {
+            endScreen.DisplayEndScreen("Ending Two", "You saw the kebab shop for what it really was. They still made you a great doner though.");
         }
         #endregion
     
