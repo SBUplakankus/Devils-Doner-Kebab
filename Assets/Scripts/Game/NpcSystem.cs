@@ -13,7 +13,7 @@ namespace Player
 
         private void Start()
         {
-            demon.GetComponent<NavMeshAgent>().enabled = false;
+            
         }
 
         /// <summary>
@@ -64,6 +64,32 @@ namespace Player
             }
         }
 
+        public void NpcAttacking(int npc)
+        {
+            switch (npc)
+            {
+                case 0:
+                    weirdo.isAttacking = true;
+                    break;
+                case 1:
+                    magic.isAttacking = true;
+                    break;
+                case 2:
+                    chef.isAttacking = true;
+                    break;
+                case 3:
+                    demon.isAttacking = true;
+                    break;
+                case 4:
+                    heretic.isAttacking = true;
+                    break;
+            }
+        }
+
+        public void DisableDemonChefNav()
+        {
+            demon.GetComponent<NavMeshAgent>().enabled = false;
+        }
         public void SetNpcToLeaving(int npc)
         {
             switch (npc)
@@ -101,6 +127,28 @@ namespace Player
                     break;
                 case 4:
                     heretic.LookAtPlayer();
+                    break;
+            }
+        }
+
+        public void DeleteNpc(int npc)
+        {
+            switch (npc)
+            {
+                case 0:
+                    weirdo.gameObject.SetActive(false);
+                    break;
+                case 1:
+                    magic.gameObject.SetActive(false);
+                    break;
+                case 2:
+                    chef.gameObject.SetActive(false);
+                    break;
+                case 3:
+                    demon.gameObject.SetActive(false);
+                    break;
+                case 4:
+                    heretic.gameObject.SetActive(false);
                     break;
             }
         }

@@ -191,6 +191,9 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
+                            ChipsAttack();
+                            break;
+                        case 1:
                             ChipsEnding();
                             break;
                     }
@@ -221,6 +224,9 @@ namespace Player
                             HereticAppearance();
                             break;
                         case 1:
+                            HereticAttack();
+                            break;
+                        case 2:
                             HereticEnding();
                             break;
                     }
@@ -309,10 +315,13 @@ namespace Player
         private void GetShot()
         {
             dialogue.StartConversation(3);
+            npc.SpawnNpc(3,4);
+            npc.LookAtPlayer(3);
         }
 
         private void EventSeven()
         {
+            npc.DisableDemonChefNav();
             player.UpdateMovePosition(3);
             npc.SpawnNpc(0, 0);
         }
@@ -366,6 +375,7 @@ namespace Player
             npc.SetNpcToLeaving(0);
             npc.MoveNpc(0, 5);
             dialogue.StartConversation(7);
+            npc.DeleteNpc(0);
         }
 
         #endregion
@@ -482,6 +492,13 @@ namespace Player
             endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the piss.");
         }
 
+        private void ChipsAttack()
+        {
+            npc.NpcAttacking(3);
+            player.LookAtTarget(4);
+            npc.MoveNpc(3, 6);
+        }
+        
         private void ChipsEnding()
         {
             endScreen.DisplayEndScreen("Ending Three", "You ordered Garlic Cheese Chips and got murdered by the kitchen staff.");
@@ -496,9 +513,16 @@ namespace Player
         {
             npc.LookAtPlayer(4);
             player.rotationSpeed = 4f;
-            player.LookAtTarget(5);
+            player.LookAtTarget(6);
             dialogue.StartConversation(16);
         }
+
+        private void HereticAttack()
+        {
+            npc.NpcAttacking(4);
+            npc.MoveNpc(4, 6);
+        }
+        
         private void HereticEnding()
         {
             endScreen.DisplayEndScreen("Ending Five", "You were executed by the harbinger of the devils doner on accounts of heresy.");

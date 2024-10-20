@@ -22,6 +22,7 @@ public class NpcController : MonoBehaviour
         private bool _isMoving;
         private bool _isLooking;
         public bool isLeaving;
+        public bool isAttacking;
         private float _rotationSpeed = 5f;
 
         private void Awake()
@@ -33,6 +34,7 @@ public class NpcController : MonoBehaviour
         private void Start()
         {
             _isMoving = false;
+            isAttacking = false;
         }
 
         private void Update()
@@ -41,7 +43,8 @@ public class NpcController : MonoBehaviour
             {
                 _navMeshAgent.SetDestination(_currentTarget.position);
                 var distance = Vector3.Distance(transform.position, _currentTarget.position);
-                if (distance < 0.25f)
+                Debug.Log(distance);
+                if (distance < 0.25f && !isAttacking)
                 {
                     if(isLeaving)
                         RemoveNpc();
@@ -51,6 +54,10 @@ public class NpcController : MonoBehaviour
                         OnMovementEnd?.Invoke();
                         _isMoving = false;
                     }
+                }
+                else if (distance < 1.5f && isAttacking)
+                {
+                    OnMovementEnd?.Invoke();
                 }
             }
             else if (_isLooking)
