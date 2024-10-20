@@ -1,5 +1,4 @@
 using System;
-using NPCs;
 using ScriptableObjects;
 using UnityEngine;
 
@@ -42,27 +41,6 @@ namespace Player
                 }
             }
         }
-    
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("NPC"))
-            {
-                var npc = other.GetComponent<NpcController>();
-                
-                _lookingAt = LookingAt.Npc;
-                HandleInteractionEnter("Talk");
-            }
-        }
-    
-        private void OnTriggerExit(Collider other)
-        {
-            if (other.gameObject.CompareTag("NPC"))
-            {
-                HandleInteractionExit();
-            }
-                
-        }
-    
         private void HandleInteractionEnter(string interactionText)
         {
             OnInteractionEnter?.Invoke(interactionText);

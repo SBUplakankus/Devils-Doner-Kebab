@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3c43c74d52d9247859f145f348b8ba, type: 3}
+  m_Name: Heretic
+  m_EditorClassIdentifier: 
+  dialogueTree:
+  - HERESY
+  - HERETIC!!! HOW DARE YOU REFUSE A PRODUCT OF OUR LORDS GLORIUS ESTABLISHMENT
+  - Wait wait hold up a sec-
+  - DEATH COMES FOR YOU NOW HERETIC
+  - AND I AM HIS HARBINGER
+  - RAAAAAAAAAAAAAAAAAAAAAA
+  dialogueSpeaker: 020000000200000000000000020000000200000002000000
+  dialogueAudio:
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
