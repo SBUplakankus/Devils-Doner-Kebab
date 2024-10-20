@@ -203,6 +203,9 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
+                            WeirdoAttack();
+                            break;
+                        case 1:
                             WeirdoEnding();
                             break;
                     }
@@ -212,6 +215,24 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
+                            WithinReveal();
+                            break;
+                        case 1:
+                            WithinMoveToDemon();
+                            break;
+                        case 2:
+                            WithinAsk();
+                            break;
+                        case 3:
+                            WithinMoveToOrder();
+                            break;
+                        case 4:
+                            WithinPickup();
+                            break;
+                        case 5:
+                            WithinLeave();
+                            break;
+                        case 6:
                             WithinEnding();
                             break;
                     }
@@ -437,6 +458,7 @@ namespace Player
         }
         private void SeeWithin()
         {
+            npc.DeleteNpc(1);
             dialogue.StartConversation(12);
         }
         #endregion
@@ -504,7 +526,14 @@ namespace Player
         {
             endScreen.DisplayEndScreen("Ending Three", "You ordered Garlic Cheese Chips and got murdered by the kitchen staff.");
         }
-
+        
+        private void WeirdoAttack()
+        {
+            npc.NpcAttacking(0);
+            npc.PlayNpcScream(0);
+            npc.MoveNpc(0,6);
+        }
+        
         private void WeirdoEnding()
         {
             endScreen.DisplayEndScreen("Ending Four", "You let the strange man harvest your organs for his own personal pleasure.");
@@ -530,9 +559,42 @@ namespace Player
             endScreen.DisplayEndScreen("Ending Five", "You were executed by the harbinger of the devils doner on accounts of heresy.");
         }
 
+        private void WithinReveal()
+        {
+            dialogue.StartConversation(17);
+        }
+
+        private void WithinMoveToDemon()
+        {
+            player.UpdateMovePosition(5);
+        }
+
+        private void WithinAsk()
+        {
+            npc.DeleteNpc(1);
+            player.LookAtTarget(4);
+            dialogue.StartConversation(18);
+        }
+
+        private void WithinMoveToOrder()
+        {
+            player.UpdateMovePosition(2);
+        }
+
+        private void WithinPickup()
+        {
+            player.LookAtTarget(1);
+            dialogue.StartConversation(19);
+        }
+
+        private void WithinLeave()
+        {
+            player.UpdateMovePosition(1);
+        }
+        
         private void WithinEnding()
         {
-            endScreen.DisplayEndScreen("Ending Two", "You saw the kebab shop for what it really was. They still made you a great doner though.");
+            endScreen.DisplayEndScreen("Ending Two", "You saw the kebab shop for what it really was. Got a great doner though.");
         }
         #endregion
     

@@ -42,7 +42,8 @@ namespace Dialogue
 
         private Tween AnimateEndingText()
         {
-            _charsPerSecond = 25;
+            _charsPerSecond = 30;
+            _punctuationPause = 40;
             var endingAnim = TypewriterAnimationWithPunctuations(ending)
                 .OnComplete(() => TypewriterAnimationWithPunctuations(info));
             return endingAnim;
