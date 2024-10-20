@@ -355,6 +355,7 @@ namespace Player
             //Weirdo Leaves Scene 
             npc.MoveNpc(0, 0);
             npc.SpawnNpc(3, 1);
+            npc.LookAtPlayer(3);
         }
 
         private void EventThirteen()
