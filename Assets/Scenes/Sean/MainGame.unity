@@ -10727,6 +10727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5711192328683230939, guid: 734998c06b1abb847b8bcffe3e118089,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6872015530288413510, guid: 734998c06b1abb847b8bcffe3e118089,
         type: 3}
       propertyPath: m_fontAsset
