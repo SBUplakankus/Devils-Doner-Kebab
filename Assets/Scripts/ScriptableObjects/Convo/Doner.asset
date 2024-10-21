@@ -19,7 +19,7 @@ MonoBehaviour:
   - Sound man, thank you boss.
   dialogueSpeaker: 00000000010000000100000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: cc5a00e85fdc0514b9a100b19d3fc6b9, type: 3}
+  - {fileID: 8300000, guid: 1fb2e8c2b6c073d45a36f0ae5f641280, type: 3}
+  - {fileID: 8300000, guid: 1d3ddd15b66a127499232a1841857b30, type: 3}
+  - {fileID: 8300000, guid: 3648d419f8614024c9cfe869f7f44fd8, type: 3}

@@ -85,6 +85,7 @@ namespace Dialogue
 
         private void PlayNextDialogue()
         {
+            _audioSource.Stop();
             _dialogueDisplay.SetNextText(_currentConvo.dialogueTree[_convoIndex]);
             _dialogueDisplay.dialogueText.color = textColours[_currentConvo.dialogueSpeaker[_convoIndex]];
             _audioSource.PlayOneShot(_currentConvo.dialogueAudio[_convoIndex]);

@@ -20,8 +20,8 @@ MonoBehaviour:
   - 'Alright mate. Now get lost. '
   dialogueSpeaker: 0000000002000000020000000200000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: cc5a00e85fdc0514b9a100b19d3fc6b9, type: 3}
+  - {fileID: 8300000, guid: 880b79c957effdf4ab8872e1a5c02615, type: 3}
+  - {fileID: 8300000, guid: 47f39fe4595738b4bb7a8df8be7153e4, type: 3}
+  - {fileID: 8300000, guid: 6dae77ce82b25a44296cecacc4eb32a5, type: 3}
+  - {fileID: 8300000, guid: cc5a00e85fdc0514b9a100b19d3fc6b9, type: 3}

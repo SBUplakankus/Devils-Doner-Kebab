@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3c43c74d52d9247859f145f348b8ba, type: 3}
+  m_Name: WithinPickup
+  m_EditorClassIdentifier: 
+  dialogueTree:
+  - 'Big guy told me my kebabs good to go. '
+  - Yes sir that is correct sir I have it right here for you sir.
+  - Have a good night sir, hope to see you back again soon.
+  - 'Thank you boss, same goes for you. '
+  - 'I am absoloutely ready to finally go tuck into this bad boy oh baby yeah. '
+  dialogueSpeaker: 0000000001000000010000000000000000000000
+  dialogueAudio:
+  - {fileID: 8300000, guid: c740d5f5ad549c146982b191bb14bba5, type: 3}
+  - {fileID: 8300000, guid: 1d3ddd15b66a127499232a1841857b30, type: 3}
+  - {fileID: 8300000, guid: bae3a2215fae22d4993d2fa6af824a56, type: 3}
+  - {fileID: 8300000, guid: 3648d419f8614024c9cfe869f7f44fd8, type: 3}
+  - {fileID: 8300000, guid: 9697511524f1cf845b8ad14d0b649f39, type: 3}

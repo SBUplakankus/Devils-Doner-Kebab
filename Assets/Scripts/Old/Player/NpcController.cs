@@ -10,6 +10,8 @@ public class NpcController : MonoBehaviour
         
         [Header("Components")]
         private NavMeshAgent _navMeshAgent;
+        private Animator _animator;
+        private AudioSource _audioSource;
         
         [Header("Movement")]
         private Transform _currentTarget;
@@ -21,16 +23,20 @@ public class NpcController : MonoBehaviour
         private bool _isMoving;
         private bool _isLooking;
         public bool isLeaving;
+        public bool isAttacking;
         private float _rotationSpeed = 5f;
 
         private void Awake()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
+            _animator = GetComponent<Animator>();
+            _audioSource = GetComponent<AudioSource>();
         }
 
         private void Start()
         {
             _isMoving = false;
+            isAttacking = false;
         }
 
         private void Update()
@@ -39,15 +45,20 @@ public class NpcController : MonoBehaviour
             {
                 _navMeshAgent.SetDestination(_currentTarget.position);
                 var distance = Vector3.Distance(transform.position, _currentTarget.position);
-                if (distance < 0.1f)
+                if (distance < 0.25f && !isAttacking)
                 {
                     if(isLeaving)
                         RemoveNpc();
                     else
                     {
+                        _animator.SetBool("Walking", false);
                         OnMovementEnd?.Invoke();
                         _isMoving = false;
                     }
+                }
+                else if (distance < 2f && isAttacking)
+                {
+                    OnMovementEnd?.Invoke();
                 }
             }
             else if (_isLooking)
@@ -58,6 +69,11 @@ public class NpcController : MonoBehaviour
             }
             
                 
+        }
+
+        public void PlayNpcScream()
+        {
+            _audioSource.Play();
         }
         
         /// <summary>
@@ -75,14 +91,16 @@ public class NpcController : MonoBehaviour
         public void RemoveNpc()
         {
             gameObject.SetActive(false);
+            Debug.Log("Deactivate");
         }
         
         /// <summary>
         /// Update the movement position of the camera
         /// </summary>
-        /// <param name="pos">ID of the next Position</param>
+        /// <param name="movePoint">ID of the next Position</param>
         public void UpdateMovePosition(Transform movePoint)
         {
+            _animator.SetBool("Walking", true);
             _isLooking = false;
             _navMeshAgent.enabled = true;
             _navMeshAgent.destination = movePoint.position;
