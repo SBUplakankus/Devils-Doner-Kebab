@@ -21,6 +21,7 @@ namespace Player
         public NpcSystem npc;
         public EndScreenController endScreen;
         public AudioController audioCon;
+        public HeadBob headBob;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _offerChoice;
@@ -302,17 +303,20 @@ namespace Player
 
         private void EventTwo()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(1);
         }
 
         private void EventThree()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(0);
             dialogue.StartConversation(1);
         }
 
         private void EventFour()
         {
+            headBob.UpdateHeadBobState(1);
             player.LookAtTarget(1);
             player.UpdateMovePosition(2);
             audioCon.PlayFlyNoise(1);
@@ -324,6 +328,7 @@ namespace Player
 
         private void EventFive()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
             choice.SetChoices("What will you order?", "Doner Kebab", "Garlic Cheese Chips");
         }
@@ -342,6 +347,7 @@ namespace Player
 
         private void EventSeven()
         {
+            headBob.UpdateHeadBobState(1);
             npc.DisableDemonChefNav();
             player.UpdateMovePosition(3);
             npc.SpawnNpc(0, 0);
@@ -353,6 +359,7 @@ namespace Player
 
         private void EventEight()
         {
+            headBob.UpdateHeadBobState(0);
             npc.MoveNpc(0, 2);
             player.LookAtTarget(2);
             audioCon.PlayFlyNoise(2);
@@ -368,7 +375,7 @@ namespace Player
 
         private void EventTen()
         {
-            choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Tell him to fuck off.");
+            choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Fuck off.");
         }
 
         private void GetHarvested()
@@ -478,6 +485,7 @@ namespace Player
 
         private void EventTwentyThree()
         {
+            headBob.UpdateHeadBobState(1);
             //Move to counter
             player.UpdateMovePosition(2);
             npc.DeleteNpc(1);
@@ -486,8 +494,9 @@ namespace Player
         
         private void EventTwentyFour()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
-            choice.SetChoices("Take the Doner Kebab", "Thank you boss.", "Keep it, not hungry.");
+            choice.SetChoices("Take the Doner Kebab", "Thank you boss.", "Changed my mind..");
         }
 
         private void EventTwentyFive()
@@ -504,6 +513,7 @@ namespace Player
 
         private void EventTwentySix()
         {
+            headBob.UpdateHeadBobState(1);
             //Leave the kebab shop 
             player.UpdateMovePosition(1);
         }
@@ -517,7 +527,7 @@ namespace Player
     
         private void MainLineEnding()
         {
-            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the piss.");
+            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the drink.");
         }
 
         private void ChipsAttack()
@@ -574,11 +584,13 @@ namespace Player
 
         private void WithinMoveToDemon()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(5);
         }
 
         private void WithinAsk()
         {
+            headBob.UpdateHeadBobState(0);
             npc.DeleteNpc(1);
             player.LookAtTarget(4);
             dialogue.StartConversation(18);
@@ -586,17 +598,20 @@ namespace Player
 
         private void WithinMoveToOrder()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(2);
         }
 
         private void WithinPickup()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
             dialogue.StartConversation(19);
         }
 
         private void WithinLeave()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(1);
         }
         

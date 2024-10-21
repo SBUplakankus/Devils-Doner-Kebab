@@ -5,49 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ee7684-0b51-4c35-9293-77c782be36dc" name="Changes" comment="Revert &quot;S&quot;&#10;&#10;This reverts commit fdfe94c4">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Chopping_Gorey.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Chopping_Gorey.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Chopping_Normal.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Chopping_Normal.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Fly_5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Scream_Stinger.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Scream_Stinger.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/Large_Beast_Roar.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/Large_Beast_Roar.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/california-night-time-suburb-ambience-distant-traffic-22403.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/california-night-time-suburb-ambience-distant-traffic-22403.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/grilling-meat-67737.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/grilling-meat-67737.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/knocking-on-a-window-104412.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/knocking-on-a-window-104412.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/man-screaming-6373.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/man-screaming-6373.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/monster-warrior-roar-195877.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/monster-warrior-roar-195877.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/wind-ambience-14720.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/wind-ambience-14720.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/womansadmoan-33954.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Pixabay/womansadmoan-33954.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Characters/Character_06/Head.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Characters/Character_06/Head.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Head.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Head.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/HeadBob.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/HeadBob.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Large_Beast_Roar.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Large_Beast_Roar.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/monster-warrior-roar-195877.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/monster-warrior-roar-195877.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +136,7 @@
       <workItem from="1729468283527" duration="984000" />
       <workItem from="1729512496188" duration="2345000" />
       <workItem from="1729515946744" duration="2118000" />
-      <workItem from="1729530564686" duration="7630000" />
+      <workItem from="1729530564686" duration="10407000" />
     </task>
     <servers />
   </component>

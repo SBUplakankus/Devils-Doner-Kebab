@@ -8,7 +8,7 @@ namespace Game
         public GameObject[] horrorAudio;
         public GameObject[] kebabs;
 
-        private void Start()
+        private void StartEnd()
         {
             kebabs[0].SetActive(true);
             kebabs[1].SetActive(false);
