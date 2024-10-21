@@ -1,8 +1,6 @@
 using System;
 using Dialogue;
 using Game;
-using PrimeTween;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player
@@ -22,6 +20,7 @@ namespace Player
         public ChoiceController choice;
         public NpcSystem npc;
         public EndScreenController endScreen;
+        public AudioController audioCon;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _offerChoice;
@@ -316,6 +315,7 @@ namespace Player
         {
             player.LookAtTarget(1);
             player.UpdateMovePosition(2);
+            audioCon.PlayFlyNoise(1);
         }
 
         #endregion
@@ -355,6 +355,7 @@ namespace Player
         {
             npc.MoveNpc(0, 2);
             player.LookAtTarget(2);
+            audioCon.PlayFlyNoise(2);
         }
 
         private void EventNine()
@@ -407,6 +408,7 @@ namespace Player
         {
             //Look at devil man
             player.LookAtTarget(4);
+            audioCon.PlayEarlyScream();
             dialogue.StartConversation(8);
             npc.SpawnNpc(1, 2);
 
@@ -423,6 +425,7 @@ namespace Player
             npc.LookAtPlayer(1);
             player.rotationSpeed = 4f;
             //Bang on window see offer man
+            audioCon.WindowBang();
             player.LookAtTarget(5);
             dialogue.StartConversation(9);
         }
@@ -436,6 +439,7 @@ namespace Player
         private void EventEighteen()
         {
             //Offer convo
+            audioCon.PlayFlyNoise(1);
             npc.LookAtPlayer(1);
             dialogue.StartConversation(10);
         }
@@ -477,6 +481,7 @@ namespace Player
             //Move to counter
             player.UpdateMovePosition(2);
             npc.DeleteNpc(1);
+            audioCon.PlayFlyNoise(4);
         }
         
         private void EventTwentyFour()
@@ -563,6 +568,8 @@ namespace Player
         private void WithinReveal()
         {
             dialogue.StartConversation(17);
+            audioCon.RevealScreamRooms();
+            audioCon.SwitchToKebabMan();
         }
 
         private void WithinMoveToDemon()

@@ -1,18 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class AudioController : MonoBehaviour
+namespace Game
 {
-    // Start is called before the first frame update
-    void Start()
+    public class AudioController : MonoBehaviour
     {
-        
-    }
+        public AudioSource fly, scream, window, kebab;
+        public AudioClip[] flyNoises;
+        public AudioClip screamKebab;
+        public GameObject screamRooms;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Start()
+        {
+            screamRooms.SetActive(false);
+        }
+
+        public void WindowBang()
+        {
+            window.Play();
+        }
+
+        public void PlayEarlyScream()
+        {
+            scream.Play();
+        }
+
+        public void PlayFlyNoise(int index)
+        {
+            fly.clip = flyNoises[index];
+            fly.Play();
+        }
+
+        public void RevealScreamRooms()
+        {
+            screamRooms.SetActive(true);
+        }
+
+        public void SwitchToKebabMan()
+        {
+            kebab.clip = screamKebab;
+        }
     }
 }
