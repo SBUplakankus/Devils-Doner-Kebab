@@ -22,10 +22,10 @@ MonoBehaviour:
   - Enjoy your meal.
   dialogueSpeaker: 00000000000000000200000000000000020000000000000002000000
   dialogueAudio:
+  - {fileID: 8300000, guid: 63a68bf8336e9ec49ba023c9c6338841, type: 3}
+  - {fileID: 8300000, guid: e98d4914e59d4974ba7889635bd79071, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: e98d4914e59d4974ba7889635bd79071, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 31782b8339ab72b4e81ccb2cd354f3fb, type: 3}
   - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}

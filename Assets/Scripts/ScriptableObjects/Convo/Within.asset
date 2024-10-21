@@ -18,6 +18,6 @@ MonoBehaviour:
   - Now just close your eyes and when you reopen them, all shall be revealed.
   dialogueSpeaker: 000000000200000002000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: d465ba8cb6c481747a0330486265a9ce, type: 3}
+  - {fileID: 8300000, guid: 57eb4dcfbb8994e4ca68223fe9e32679, type: 3}
+  - {fileID: 8300000, guid: 8c0ae1b9cdf6370468e2ba06e55d265e, type: 3}

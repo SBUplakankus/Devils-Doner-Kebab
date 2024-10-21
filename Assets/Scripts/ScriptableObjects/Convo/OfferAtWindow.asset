@@ -17,5 +17,5 @@ MonoBehaviour:
   - Who is this guy?
   dialogueSpeaker: 0000000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: df5ff2b0c8c915c4490ebd800972760a, type: 3}
+  - {fileID: 8300000, guid: 63a68bf8336e9ec49ba023c9c6338841, type: 3}

@@ -17,5 +17,5 @@ MonoBehaviour:
   - Have good night sir, hope see you again soon.
   dialogueSpeaker: 0000000001000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: a3c74ddf2f86a784fbd101663217b006, type: 3}
+  - {fileID: 8300000, guid: b95ac3f8b4bad574b8bd7f1d7aaf3515, type: 3}

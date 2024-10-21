@@ -458,7 +458,7 @@ namespace Player
         }
         private void SeeWithin()
         {
-            npc.DeleteNpc(1);
+            
             dialogue.StartConversation(12);
         }
         #endregion
@@ -476,6 +476,7 @@ namespace Player
         {
             //Move to counter
             player.UpdateMovePosition(2);
+            npc.DeleteNpc(1);
         }
         
         private void EventTwentyFour()
