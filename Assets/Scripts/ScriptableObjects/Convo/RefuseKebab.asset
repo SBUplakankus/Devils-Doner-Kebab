@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: RefuseKebab
   m_EditorClassIdentifier: 
   dialogueTree:
-  - You know what...
-  - I really don't feel like eating a kebab anymore...
-  - Keep it, gonna go pick up a pizza instead.
+  - You know boss... Now that I am thinking about it more....
+  - I really don't feel like eating a kebab right now...
+  - Keep it.. I am gonna go pick up a pizza instead.
   dialogueSpeaker: 000000000000000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: e98d4914e59d4974ba7889635bd79071, type: 3}
+  - {fileID: 8300000, guid: a3c74ddf2f86a784fbd101663217b006, type: 3}
+  - {fileID: 8300000, guid: c740d5f5ad549c146982b191bb14bba5, type: 3}

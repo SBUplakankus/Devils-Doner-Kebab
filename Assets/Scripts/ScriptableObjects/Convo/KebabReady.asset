@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTree:
   - Sir, your kebab ready now for collection sir.
-  - Thank god it is about time.
+  - Thank god, it is about time.
   dialogueSpeaker: 0100000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: bae3a2215fae22d4993d2fa6af824a56, type: 3}
+  - {fileID: 8300000, guid: 3648d419f8614024c9cfe869f7f44fd8, type: 3}

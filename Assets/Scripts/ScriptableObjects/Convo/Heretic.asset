@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: Heretic
   m_EditorClassIdentifier: 
   dialogueTree:
-  - HERESY
-  - HERETIC!!! HOW DARE YOU REFUSE A PRODUCT OF OUR LORDS GLORIUS ESTABLISHMENT
+  - HERESYYYYYY
+  - 'HOW DARE YOU REFUSE A BLESSING '
+  - BIRTHED FROM OUR LORDS GLORIUS ESTABLISHMENT
   - Wait wait hold up a sec-
-  - DEATH COMES FOR YOU NOW HERETIC
+  - 'DEATH COMES FOR YOU NOW HERETIC '
   - AND I AM HIS HARBINGER
   - RAAAAAAAAAAAAAAAAAAAAAA
-  dialogueSpeaker: 020000000200000000000000020000000200000002000000
+  dialogueSpeaker: 02000000020000000200000000000000020000000200000002000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 3313e44251480e6469f879d88658b15b, type: 3}
+  - {fileID: 8300000, guid: 5220231d17a739245929156032902824, type: 3}
+  - {fileID: 8300000, guid: 5b39d3f1a8c475c4780652db8f405f00, type: 3}
+  - {fileID: 8300000, guid: 63a68bf8336e9ec49ba023c9c6338841, type: 3}
+  - {fileID: 8300000, guid: c15c883ceff2f0e4197fed894b79b9da, type: 3}
+  - {fileID: 8300000, guid: 4f50394c6d9025543ac907ad24615223, type: 3}
+  - {fileID: 8300000, guid: 437020f3c311cce4bab5f2b210f1fa53, type: 3}

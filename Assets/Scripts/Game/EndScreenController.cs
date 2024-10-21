@@ -10,10 +10,13 @@ namespace Game
 {
     public class EndScreenController : MonoBehaviour
     {
+        public static event Action OnBlinkEnd;
+        
         public DialogueTypewriter typewriter;
         public Image fadeScreen;
+        public Image blinkScreen;
         public TMP_Text ending, description;
-        private readonly float _fadeDuration = 0.3f;
+        private readonly float _fadeDuration = 0.5f;
 
         private void Start()
         {
@@ -53,6 +56,41 @@ namespace Game
             typewriter.SetEndingText();
             yield return new WaitForSeconds(9);
             SceneManager.LoadScene(0);
+        }
+
+        private IEnumerator Blink()
+        {
+            var startColor = blinkScreen.color;
+            startColor.a = 0f;
+
+            var endColor = fadeScreen.color;
+            endColor.a = 1f;
+
+            var elapsedTime = 0f;
+            
+            while (elapsedTime < _fadeDuration)
+            {
+                elapsedTime += Time.deltaTime;
+
+                blinkScreen.color = Color.Lerp(startColor, endColor, elapsedTime / _fadeDuration);
+
+                yield return null;
+            }
+
+            fadeScreen.color = endColor;
+            yield return new WaitForSeconds(1);
+
+            elapsedTime = 0f;
+            while (elapsedTime < _fadeDuration)
+            {
+                elapsedTime += Time.deltaTime;
+
+                blinkScreen.color = Color.Lerp(endColor, startColor, elapsedTime / _fadeDuration);
+
+                yield return null;
+            }
+            
+            OnBlinkEnd?.Invoke();
         }
     }
 }
