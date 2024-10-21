@@ -24,7 +24,7 @@ MonoBehaviour:
   dialogueSpeaker: 02000000000000000200000002000000020000000200000002000000
   dialogueAudio:
   - {fileID: 8300000, guid: 57eb4dcfbb8994e4ca68223fe9e32679, type: 3}
-  - {fileID: 8300000, guid: d465ba8cb6c481747a0330486265a9ce, type: 3}
+  - {fileID: 8300000, guid: a3c74ddf2f86a784fbd101663217b006, type: 3}
   - {fileID: 8300000, guid: 86c8a6b863c205e459d39ff869b4d404, type: 3}
   - {fileID: 8300000, guid: 5a3e8763826980046bef9367ac11b0e7, type: 3}
   - {fileID: 8300000, guid: b1f644965d07b1c49b21b96252a5630d, type: 3}

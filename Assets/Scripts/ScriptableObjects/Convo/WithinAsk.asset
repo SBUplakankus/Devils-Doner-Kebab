@@ -24,8 +24,8 @@ MonoBehaviour:
   dialogueAudio:
   - {fileID: 8300000, guid: 63a68bf8336e9ec49ba023c9c6338841, type: 3}
   - {fileID: 8300000, guid: e98d4914e59d4974ba7889635bd79071, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 8a61237b91c9c9b42a43cb648e22e047, type: 3}
   - {fileID: 8300000, guid: e98d4914e59d4974ba7889635bd79071, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: c75400af8e1e0984ca70cfb64a41b12d, type: 3}
   - {fileID: 8300000, guid: 31782b8339ab72b4e81ccb2cd354f3fb, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: 6a4c39c75da825047ab33ef5e2466702, type: 3}
