@@ -5,20 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ee7684-0b51-4c35-9293-77c782be36dc" name="Changes" comment="Revert &quot;S&quot;&#10;&#10;This reverts commit fdfe94c4">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_1_Sec_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_1_Sec_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_1_Sec_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_1_Sec_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_2_Sec_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_2_Sec_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_3_Sec_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_3_Sec_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_4_Sec_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_4_Sec_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_5_Sec_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Gibberish_5_Sec_1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/DemonStaring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/DemonStaring.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/WithinAsk.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/WithinAsk.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Death_SFX_Harbinger.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Death_SFX_Harbinger.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Kebab_Man.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Kebab_Man.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Ambience.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Ambience.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Scream.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Scream.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Person_Escaping.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Person_Escaping.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Chef_Breathing_Loop (1).wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Chef_Breathing_Loop (1).wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Breathing_Loop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Breathing_Loop.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Roar.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Roar.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Global Volume.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Global Volume.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Render Output.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Render Output.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/Intro.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/Intro.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +44,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/KebabRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Player/NpcController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -51,7 +68,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;characters&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SeanAudioWithin&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -70,7 +87,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/DKebab\Devils Doner Kebab.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/DKebab/Devils Doner Kebab.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tremo\Desktop\DKebab" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -135,7 +152,11 @@
       <workItem from="1729442920095" duration="11360000" />
       <workItem from="1729468283527" duration="984000" />
       <workItem from="1729512496188" duration="2345000" />
-      <workItem from="1729515946744" duration="1522000" />
+      <workItem from="1729515946744" duration="2118000" />
+      <workItem from="1729530564686" duration="10589000" />
+      <workItem from="1729598580500" duration="2124000" />
+      <workItem from="1729602661144" duration="2514000" />
+      <workItem from="1729617401130" duration="5650000" />
     </task>
     <servers />
   </component>

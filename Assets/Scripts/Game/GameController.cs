@@ -1,8 +1,6 @@
 using System;
 using Dialogue;
 using Game;
-using PrimeTween;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player
@@ -22,6 +20,9 @@ namespace Player
         public ChoiceController choice;
         public NpcSystem npc;
         public EndScreenController endScreen;
+        public AudioController audioCon;
+        public HeadBob headBob;
+        public LightController lights;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _offerChoice;
@@ -47,6 +48,7 @@ namespace Player
             PlayerController.OnMovementEnd += ProgressGame;
             ChoiceController.OnChoiceMade += HandleChoiceMade;
             NpcController.OnMovementEnd += ProgressGame;
+            EndScreenController.OnBlinkEnd += ProgressGame;
         }
 
         private void OnDisable()
@@ -55,6 +57,7 @@ namespace Player
             PlayerController.OnMovementEnd -= ProgressGame;
             ChoiceController.OnChoiceMade -= HandleChoiceMade;
             NpcController.OnMovementEnd -= ProgressGame;
+            EndScreenController.OnBlinkEnd -= ProgressGame;
         }
 
         private void ProgressGame()
@@ -147,7 +150,7 @@ namespace Player
                         switch (_offerChoice)
                         {
                             case ChoiceMade.Option1:
-                                SeeWithin();
+                                WithinReaction();
                                 _ending = Ending.Offer;
                                 break;
                             case ChoiceMade.Option2:
@@ -215,24 +218,27 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
-                            WithinReveal();
+                            SeeWithin();
                             break;
                         case 1:
-                            WithinMoveToDemon();
+                            WithinReveal();
                             break;
                         case 2:
-                            WithinAsk();
+                            WithinMoveToDemon();
                             break;
                         case 3:
-                            WithinMoveToOrder();
+                            WithinAsk();
                             break;
                         case 4:
-                            WithinPickup();
+                            WithinMoveToOrder();
                             break;
                         case 5:
-                            WithinLeave();
+                            WithinPickup();
                             break;
                         case 6:
+                            WithinLeave();
+                            break;
+                        case 7:
                             WithinEnding();
                             break;
                     }
@@ -303,19 +309,23 @@ namespace Player
 
         private void EventTwo()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(1);
         }
 
         private void EventThree()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(0);
             dialogue.StartConversation(1);
         }
 
         private void EventFour()
         {
+            headBob.UpdateHeadBobState(1);
             player.LookAtTarget(1);
             player.UpdateMovePosition(2);
+            audioCon.PlayFlyNoise(1);
         }
 
         #endregion
@@ -324,6 +334,7 @@ namespace Player
 
         private void EventFive()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
             choice.SetChoices("What will you order?", "Doner Kebab", "Garlic Cheese Chips");
         }
@@ -336,12 +347,14 @@ namespace Player
         private void GetShot()
         {
             dialogue.StartConversation(3);
+            audioCon.PlayChefBreathing();
             npc.SpawnNpc(3,4);
             npc.LookAtPlayer(3);
         }
 
         private void EventSeven()
         {
+            headBob.UpdateHeadBobState(1);
             npc.DisableDemonChefNav();
             player.UpdateMovePosition(3);
             npc.SpawnNpc(0, 0);
@@ -353,8 +366,10 @@ namespace Player
 
         private void EventEight()
         {
+            headBob.UpdateHeadBobState(0);
             npc.MoveNpc(0, 2);
             player.LookAtTarget(2);
+            audioCon.PlayFlyNoise(2);
         }
 
         private void EventNine()
@@ -367,7 +382,7 @@ namespace Player
 
         private void EventTen()
         {
-            choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Tell him to fuck off.");
+            choice.SetChoices("Let this goon harvest your organs", "Yea why not", "Fuck off.");
         }
 
         private void GetHarvested()
@@ -397,6 +412,7 @@ namespace Player
             npc.MoveNpc(0, 5);
             dialogue.StartConversation(7);
             npc.DeleteNpc(0);
+            audioCon.PlayEarlyScream();
         }
 
         #endregion
@@ -423,6 +439,7 @@ namespace Player
             npc.LookAtPlayer(1);
             player.rotationSpeed = 4f;
             //Bang on window see offer man
+            audioCon.WindowBang();
             player.LookAtTarget(5);
             dialogue.StartConversation(9);
         }
@@ -436,6 +453,7 @@ namespace Player
         private void EventEighteen()
         {
             //Offer convo
+            audioCon.PlayFlyNoise(1);
             npc.LookAtPlayer(1);
             dialogue.StartConversation(10);
         }
@@ -449,6 +467,7 @@ namespace Player
         {
             //Dont wanna see within
             dialogue.StartConversation(11);
+            audioCon.PlayEscapeScream();
         }
 
         private void EventTwentyOne()
@@ -458,7 +477,11 @@ namespace Player
         }
         private void SeeWithin()
         {
-            
+            endScreen.SetPlayerBlink();
+        }
+
+        private void WithinReaction()
+        {
             dialogue.StartConversation(12);
         }
         #endregion
@@ -474,15 +497,18 @@ namespace Player
 
         private void EventTwentyThree()
         {
+            headBob.UpdateHeadBobState(1);
             //Move to counter
             player.UpdateMovePosition(2);
             npc.DeleteNpc(1);
+            audioCon.PlayFlyNoise(4);
         }
         
         private void EventTwentyFour()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
-            choice.SetChoices("Take the Doner Kebab", "Thank you boss.", "Keep it, not hungry.");
+            choice.SetChoices("Take the Doner Kebab", "Thank you boss.", "Changed my mind..");
         }
 
         private void EventTwentyFive()
@@ -499,6 +525,8 @@ namespace Player
 
         private void EventTwentySix()
         {
+            audioCon.SetFadeInMusic();
+            headBob.UpdateHeadBobState(1);
             //Leave the kebab shop 
             player.UpdateMovePosition(1);
         }
@@ -512,7 +540,7 @@ namespace Player
     
         private void MainLineEnding()
         {
-            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the piss.");
+            endScreen.DisplayEndScreen("Ending One", "You ordered a Doner Kebab after a great night out on the drink.");
         }
 
         private void ChipsAttack()
@@ -562,16 +590,21 @@ namespace Player
 
         private void WithinReveal()
         {
+            lights.SetLightColour(1);
             dialogue.StartConversation(17);
+            audioCon.RevealScreamRooms();
+            audioCon.SwitchToKebabMan();
         }
 
         private void WithinMoveToDemon()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(5);
         }
 
         private void WithinAsk()
         {
+            headBob.UpdateHeadBobState(0);
             npc.DeleteNpc(1);
             player.LookAtTarget(4);
             dialogue.StartConversation(18);
@@ -579,17 +612,21 @@ namespace Player
 
         private void WithinMoveToOrder()
         {
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(2);
         }
 
         private void WithinPickup()
         {
+            headBob.UpdateHeadBobState(0);
             player.LookAtTarget(1);
             dialogue.StartConversation(19);
         }
 
         private void WithinLeave()
         {
+            audioCon.SetFadeInMusic();
+            headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(1);
         }
         
