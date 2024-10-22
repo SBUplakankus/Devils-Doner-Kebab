@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Harvest
   m_EditorClassIdentifier: 
   dialogueTree:
-  - Yea sure why not. It is haloween brother man.
+  - Yea sure why not. It is always a good feeling to do something nice for others
+    I suppose...
   - 'Excellent choice my precious little primrose. '
   - Now just hold still for me a second so I can..........
   dialogueSpeaker: 000000000200000002000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 31782b8339ab72b4e81ccb2cd354f3fb, type: 3}
+  - {fileID: 8300000, guid: 9697511524f1cf845b8ad14d0b649f39, type: 3}
   - {fileID: 8300000, guid: 6dae77ce82b25a44296cecacc4eb32a5, type: 3}
   - {fileID: 8300000, guid: 001c6cff07c371245a6a96aa409131b7, type: 3}

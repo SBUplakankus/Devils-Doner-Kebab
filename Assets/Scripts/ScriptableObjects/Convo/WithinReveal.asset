@@ -22,10 +22,10 @@ MonoBehaviour:
   - Oh..... Well I am starting to get pretty hungry by now.....
   dialogueSpeaker: 00000000000000000000000002000000020000000200000000000000
   dialogueAudio:
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
-  - {fileID: 8300000, guid: 4128a7abdf1a9bc479aa6855b054d4d0, type: 3}
+  - {fileID: 8300000, guid: c7a076ce56a22d345bee69caf4edc245, type: 3}
+  - {fileID: 8300000, guid: 70c4fc1d32e64ee42beb37b00bdbac1a, type: 3}
+  - {fileID: 8300000, guid: c81d7b9be18ebb44b8ba43678535cb04, type: 3}
+  - {fileID: 8300000, guid: 57eb4dcfbb8994e4ca68223fe9e32679, type: 3}
+  - {fileID: 8300000, guid: 5a3e8763826980046bef9367ac11b0e7, type: 3}
+  - {fileID: 8300000, guid: 86c8a6b863c205e459d39ff869b4d404, type: 3}
+  - {fileID: 8300000, guid: a3c74ddf2f86a784fbd101663217b006, type: 3}

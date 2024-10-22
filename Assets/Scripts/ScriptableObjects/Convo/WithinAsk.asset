@@ -18,7 +18,7 @@ MonoBehaviour:
   - Everything is fine.
   - You sure? Sounds kinda sore maybe you should check it out.
   - Everything is Ok Human.... Your order is now ready for collection.
-  - 'Oh cool beans. Gonna go pick it up so, have a good night big man. '
+  - Oh ok... I didn't realise... I suppose I should go pick it up so....
   - Enjoy your meal.
   dialogueSpeaker: 00000000000000000200000000000000020000000000000002000000
   dialogueAudio:

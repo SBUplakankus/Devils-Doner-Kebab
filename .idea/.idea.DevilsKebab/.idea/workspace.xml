@@ -5,35 +5,352 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ee7684-0b51-4c35-9293-77c782be36dc" name="Changes" comment="Revert &quot;S&quot;&#10;&#10;This reverts commit fdfe94c4">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Death_SFX_Harbinger.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Death_SFX_Harbinger.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Kebab_Man.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Kebab_Man.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Ambience.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Ambience.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Scream.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Outdoor_Scream.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Person_Escaping.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Ambient/Person_Escaping.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Chef_Breathing_Loop (1).wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Chef_Breathing_Loop (1).wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Breathing_Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Breathing_Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Roar.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Talking/Chef/Chef_Roar.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Global Volume.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Global Volume.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Render Output.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Render Output.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/Intro.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/Intro.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Dot_Dot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Dot_Dot.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Death_SFX_Harbinger (1).wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Death_SFX_Harbinger (1).wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Dot_Dot_Dot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Dot_Dot_Dot.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Eating_Guts.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Eating_Guts.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_I_Demand_Answers.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_I_Demand_Answers.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_What_Is_This.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_What_Is_This.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_Where_Have_You_Taken_Me.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Player_Gibberish_Where_Have_You_Taken_Me.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Step_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Step_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Terroly_Town_Loop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Terroly_Town_Loop.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Window_Knock.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Final/Window_Knock.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FUCK THIS/Early/Roof/Glass/Glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FUCK THIS/Early/Roof/Glass/Glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Tacos.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Tacos.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Tacos_Props.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Tacos_Props.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Asphalt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Asphalt.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/BarkDecidious.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/BarkDecidious.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Board.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Board.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Branches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Branches.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/BrickSmallBrown.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/BrickSmallBrown.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_01_Red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_01_Red.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_Red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_Red.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_Yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Concrete_Yellow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Disposable_cups.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Disposable_cups.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Grass.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Grass.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Grill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Grill.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Light.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Light_Emissor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Light_Emissor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Logo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Meat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Meat.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Meat_Shepherd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Meat_Shepherd.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Metal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Metal.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/MetalRollup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/MetalRollup.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Metal_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Metal_02.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Napkins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Napkins.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Oil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Oil.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Onion_Coriander.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Onion_Coriander.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Parking_lot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Parking_lot.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plants.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plants.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plants_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plants_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plaster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plaster.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plaster_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plaster_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plastic_Box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plastic_Box.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plates_P.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Plates_P.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Public_phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Public_phone.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Refrigerator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Refrigerator.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Refrigerator_Emissor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Refrigerator_Emissor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Salt_pepper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Salt_pepper.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sauce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sauce.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Shelf_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Shelf_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sidewalk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sidewalk.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sidewalk_B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sidewalk_B.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sign.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Soda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Soda.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sodas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Sodas.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Store.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Store_Emissor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Store_Emissor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Taco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Taco.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Tortilla_Taco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Tortilla_Taco.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Traffic_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Traffic_light.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Traffic_light_Emissor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Traffic_light_Emissor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Wire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Wire.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Wood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/Wood.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/WoodFine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/WoodFine.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_modern.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_modern.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_modern_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_modern_01.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_white.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_white.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_white_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/brick_white_01.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/bucket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/bucket.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_05.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_06.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_07.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_08.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_09.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_10.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_13.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_14.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_15.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_16.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_17.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_18.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_19.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_20.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_22.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_23.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_24.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_25.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_26.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_abandoned.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/buildings_abandoned.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/disposable_plates.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/disposable_plates.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/door.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/door.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_garage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_garage.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_garage_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_garage_01.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal_01.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/doors_metal_02.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/electric_pole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/electric_pole.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/gas_tank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/gas_tank.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/metal_bare.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/metal_bare.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/plastic_bag_P.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/plastic_bag_P.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/road.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/road.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/shepherd_spinning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/shepherd_spinning.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/trash_can.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/trash_can.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_01.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_02.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/windows_03.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/wood_new.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures/wood_new.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Logo_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Logo_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Napkins_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Napkins_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Oil_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Oil_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Plastic_Box_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Plastic_Box_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Refrigerator_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Refrigerator_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Sal_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Sal_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Soda_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Soda_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Sodas_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/Sodas_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/disposable_plates_S_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Elbodiloro/Textures_S_C/disposable_plates_S_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters/Characters.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters/Characters.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters/Characters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters/Characters.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_/Characters_.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_/Characters_.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_01/Characters_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_01/Characters_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_01/Characters_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_01/Characters_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_02.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_02/Characters_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_02/Characters_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_02/Characters_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_02/Characters_02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_03.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_03/Characters_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_03/Characters_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_03/Characters_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_03/Characters_03.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_04.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_04/Characters_04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_04/Characters_04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_04/Characters_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Characters_04/Characters_04.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe10.001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe10.001.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe10.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pe9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.dae.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Pesonajes 2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Wood0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Imports/Personajes/Personajes terror/Wood0.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Building.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-Road 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-Road 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-Road.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-Road.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/KebabRoation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/KebabRoation.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Render Texture/Rende.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Render Texture/Rende.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ablood_text/Glass_blood/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ablood_text/Glass_blood/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nikita/Scene Model.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nikita/Scene Model.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-w.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame/NavMesh-w.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/AudioController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/DemonStaring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/DemonStaring.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/Intro.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/Intro.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/WithinReveal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Convo/WithinReveal.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +363,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/KebabRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LightController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KebabRoation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Player/NpcController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -63,28 +381,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;SeanAudioWithin&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\tremo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\tremo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\tremo\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\tremo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\tremo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\tremo\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Desktop/DKebab/Devils Doner Kebab.exe" />

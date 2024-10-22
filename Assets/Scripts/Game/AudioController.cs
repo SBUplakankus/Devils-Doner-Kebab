@@ -11,7 +11,7 @@ namespace Game
         public AudioClip screamKebab;
         public GameObject screamRooms;
 
-        private float _musicfadeInDuration = 3f;
+        private float _musicfadeInDuration = 9f;
         private float _elapsedTime;
 
         private void Start()
@@ -61,13 +61,13 @@ namespace Game
 
         private IEnumerator FadeInMusic()
         {
+            music.Play();
             _elapsedTime = 0;
             while (_elapsedTime < _musicfadeInDuration)
             {
                 _elapsedTime += Time.deltaTime;
 
-                music.volume = Mathf.Lerp(0, 1, _elapsedTime / _musicfadeInDuration);
-
+                music.volume = Mathf.Lerp(0, 0.8f, _elapsedTime / _musicfadeInDuration);
                 yield return null;
             }
 

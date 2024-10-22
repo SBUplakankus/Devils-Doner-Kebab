@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: WithinPickup
   m_EditorClassIdentifier: 
   dialogueTree:
-  - 'Big guy told me my kebabs good to go. '
+  - Hello boss, the big guy just told me my kebab is ready for collection.
   - Yes sir that is correct sir I have it right here for you sir.
   - Have a good night sir, hope to see you back again soon.
   - 'Thank you boss, same goes for you. '
-  - 'I am absoloutely ready to finally go tuck into this bad boy oh baby yeah. '
+  - I can't wait to get back home and tuck into this bad boy.
   dialogueSpeaker: 0000000001000000010000000000000000000000
   dialogueAudio:
   - {fileID: 8300000, guid: c740d5f5ad549c146982b191bb14bba5, type: 3}

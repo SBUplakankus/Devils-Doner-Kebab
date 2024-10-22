@@ -65,7 +65,9 @@ namespace Game
 
             fadeScreen.color = endColor;
             typewriter.SetEndingText();
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(8);
+            
+            
             blinkScreen.gameObject.SetActive(true);
             startColor = blinkScreen.color;
             startColor.a = 0f;
@@ -83,6 +85,8 @@ namespace Game
 
                 yield return null;
             }
+
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene(0);
         }
 
@@ -110,7 +114,7 @@ namespace Game
             within.RevealWithin();
             audioCon.RevealScreamRooms();
             
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
 
             elapsedTime = 0f;
             while (elapsedTime < _fadeDuration)
