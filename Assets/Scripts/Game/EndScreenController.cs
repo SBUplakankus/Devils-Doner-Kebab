@@ -18,7 +18,9 @@ namespace Game
         public TMP_Text ending, description;
         private readonly float _fadeDuration = 0.5f;
         private AudioSource _audioSource;
-
+        public WithinController within;
+        public LightController lights;
+        public AudioController audioCon;
         private void Start()
         {
             ending.maxVisibleCharacters = 0;
@@ -36,7 +38,7 @@ namespace Game
             StartCoroutine(FadeInScreen());
         }
 
-        public void PlayerBlink()
+        public void SetPlayerBlink()
         {
             blinkScreen.gameObject.SetActive(true);
             StartCoroutine(Blink());
@@ -104,6 +106,10 @@ namespace Game
             }
 
             blinkScreen.color = endColor;
+            lights.SetLightColour(1);
+            within.RevealWithin();
+            audioCon.RevealScreamRooms();
+            
             yield return new WaitForSeconds(1);
 
             elapsedTime = 0f;

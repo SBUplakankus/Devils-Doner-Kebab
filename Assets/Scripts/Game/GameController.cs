@@ -48,6 +48,7 @@ namespace Player
             PlayerController.OnMovementEnd += ProgressGame;
             ChoiceController.OnChoiceMade += HandleChoiceMade;
             NpcController.OnMovementEnd += ProgressGame;
+            EndScreenController.OnBlinkEnd += ProgressGame;
         }
 
         private void OnDisable()
@@ -56,6 +57,7 @@ namespace Player
             PlayerController.OnMovementEnd -= ProgressGame;
             ChoiceController.OnChoiceMade -= HandleChoiceMade;
             NpcController.OnMovementEnd -= ProgressGame;
+            EndScreenController.OnBlinkEnd -= ProgressGame;
         }
 
         private void ProgressGame()
@@ -148,7 +150,7 @@ namespace Player
                         switch (_offerChoice)
                         {
                             case ChoiceMade.Option1:
-                                SeeWithin();
+                                WithinReaction();
                                 _ending = Ending.Offer;
                                 break;
                             case ChoiceMade.Option2:
@@ -216,24 +218,27 @@ namespace Player
                     switch (_endingStage)
                     {
                         case 0:
-                            WithinReveal();
+                            SeeWithin();
                             break;
                         case 1:
-                            WithinMoveToDemon();
+                            WithinReveal();
                             break;
                         case 2:
-                            WithinAsk();
+                            WithinMoveToDemon();
                             break;
                         case 3:
-                            WithinMoveToOrder();
+                            WithinAsk();
                             break;
                         case 4:
-                            WithinPickup();
+                            WithinMoveToOrder();
                             break;
                         case 5:
-                            WithinLeave();
+                            WithinPickup();
                             break;
                         case 6:
+                            WithinLeave();
+                            break;
+                        case 7:
                             WithinEnding();
                             break;
                     }
@@ -342,6 +347,7 @@ namespace Player
         private void GetShot()
         {
             dialogue.StartConversation(3);
+            audioCon.PlayChefBreathing();
             npc.SpawnNpc(3,4);
             npc.LookAtPlayer(3);
         }
@@ -406,6 +412,7 @@ namespace Player
             npc.MoveNpc(0, 5);
             dialogue.StartConversation(7);
             npc.DeleteNpc(0);
+            audioCon.PlayEarlyScream();
         }
 
         #endregion
@@ -416,7 +423,6 @@ namespace Player
         {
             //Look at devil man
             player.LookAtTarget(4);
-            audioCon.PlayEarlyScream();
             dialogue.StartConversation(8);
             npc.SpawnNpc(1, 2);
 
@@ -461,6 +467,7 @@ namespace Player
         {
             //Dont wanna see within
             dialogue.StartConversation(11);
+            audioCon.PlayEscapeScream();
         }
 
         private void EventTwentyOne()
@@ -470,7 +477,11 @@ namespace Player
         }
         private void SeeWithin()
         {
-            
+            endScreen.SetPlayerBlink();
+        }
+
+        private void WithinReaction()
+        {
             dialogue.StartConversation(12);
         }
         #endregion
@@ -514,6 +525,7 @@ namespace Player
 
         private void EventTwentySix()
         {
+            audioCon.SetFadeInMusic();
             headBob.UpdateHeadBobState(1);
             //Leave the kebab shop 
             player.UpdateMovePosition(1);
@@ -578,6 +590,7 @@ namespace Player
 
         private void WithinReveal()
         {
+            lights.SetLightColour(1);
             dialogue.StartConversation(17);
             audioCon.RevealScreamRooms();
             audioCon.SwitchToKebabMan();
@@ -612,6 +625,7 @@ namespace Player
 
         private void WithinLeave()
         {
+            audioCon.SetFadeInMusic();
             headBob.UpdateHeadBobState(1);
             player.UpdateMovePosition(1);
         }

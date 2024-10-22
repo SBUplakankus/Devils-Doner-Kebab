@@ -1,20 +1,28 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Game
 {
     public class AudioController : MonoBehaviour
     {
-        public AudioSource fly, scream, window, kebab;
+        public AudioSource fly, scream, window, kebab, breathing, escaping, music;
         public AudioClip[] flyNoises;
         public AudioClip screamKebab;
         public GameObject screamRooms;
+
+        private float _musicfadeInDuration = 3f;
+        private float _elapsedTime;
 
         private void Start()
         {
             screamRooms.SetActive(false);
         }
 
+        public void PlayChefBreathing()
+        {
+            breathing.Play();
+        }
         public void WindowBang()
         {
             window.Play();
@@ -38,7 +46,32 @@ namespace Game
 
         public void SwitchToKebabMan()
         {
-            kebab.clip = screamKebab;
+            kebab.Play();
+        }
+
+        public void PlayEscapeScream()
+        {
+            escaping.Play();
+        }
+
+        public void SetFadeInMusic()
+        {
+            StartCoroutine(FadeInMusic());
+        }
+
+        private IEnumerator FadeInMusic()
+        {
+            _elapsedTime = 0;
+            while (_elapsedTime < _musicfadeInDuration)
+            {
+                _elapsedTime += Time.deltaTime;
+
+                music.volume = Mathf.Lerp(0, 1, _elapsedTime / _musicfadeInDuration);
+
+                yield return null;
+            }
+
+            music.volume = 1;
         }
     }
 }
