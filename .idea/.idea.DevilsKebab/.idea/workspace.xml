@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ee7684-0b51-4c35-9293-77c782be36dc" name="Changes" comment="Revert &quot;S&quot;&#10;&#10;This reverts commit fdfe94c4">
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Characters/Character_06/Head.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Characters/Character_06/Head.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Head.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Imports/Head.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/HeadBob.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/HeadBob.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Walking.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Walking/Footsteps_Gravel_03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Walking/Footsteps_Gravel_03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/FootstepAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/FootstepAudio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LightController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/LightController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DevilsKebab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Pixabay/plors-75447.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Render Texture/Rende.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Render Texture/Rende.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sean/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/EndScreenController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WithinController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/KebabRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/LightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Player/NpcController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -70,7 +71,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/DKebab\Devils Doner Kebab.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/DKebab/Devils Doner Kebab.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tremo\Desktop\DKebab" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -136,7 +137,9 @@
       <workItem from="1729468283527" duration="984000" />
       <workItem from="1729512496188" duration="2345000" />
       <workItem from="1729515946744" duration="2118000" />
-      <workItem from="1729530564686" duration="10407000" />
+      <workItem from="1729530564686" duration="10589000" />
+      <workItem from="1729598580500" duration="2124000" />
+      <workItem from="1729602661144" duration="2514000" />
     </task>
     <servers />
   </component>

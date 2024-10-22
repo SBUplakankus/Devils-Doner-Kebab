@@ -22,6 +22,7 @@ namespace Player
         public EndScreenController endScreen;
         public AudioController audioCon;
         public HeadBob headBob;
+        public LightController lights;
 
         private ChoiceMade _orderChoice;
         private ChoiceMade _offerChoice;

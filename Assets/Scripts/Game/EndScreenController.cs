@@ -17,12 +17,15 @@ namespace Game
         public Image blinkScreen;
         public TMP_Text ending, description;
         private readonly float _fadeDuration = 0.5f;
+        private AudioSource _audioSource;
 
         private void Start()
         {
             ending.maxVisibleCharacters = 0;
             description.maxVisibleCharacters = 0;
             fadeScreen.gameObject.SetActive(false);
+            blinkScreen.gameObject.SetActive(false);
+            _audioSource = GetComponent<AudioSource>();
         }
 
         public void DisplayEndScreen(string endingText, string descriptionText)
@@ -31,6 +34,12 @@ namespace Game
             ending.text = endingText;
             description.text = descriptionText;
             StartCoroutine(FadeInScreen());
+        }
+
+        public void PlayerBlink()
+        {
+            blinkScreen.gameObject.SetActive(true);
+            StartCoroutine(Blink());
         }
 
         private IEnumerator FadeInScreen()
@@ -54,7 +63,24 @@ namespace Game
 
             fadeScreen.color = endColor;
             typewriter.SetEndingText();
-            yield return new WaitForSeconds(9);
+            yield return new WaitForSeconds(5);
+            blinkScreen.gameObject.SetActive(true);
+            startColor = blinkScreen.color;
+            startColor.a = 0f;
+
+            endColor = blinkScreen.color;
+            endColor.a = 1f;
+
+            elapsedTime = 0f;
+
+            while (elapsedTime < _fadeDuration * 4)
+            {
+                elapsedTime += Time.deltaTime;
+
+                blinkScreen.color = Color.Lerp(startColor, endColor, elapsedTime / _fadeDuration * 4);
+
+                yield return null;
+            }
             SceneManager.LoadScene(0);
         }
 
@@ -68,16 +94,16 @@ namespace Game
 
             var elapsedTime = 0f;
             
-            while (elapsedTime < _fadeDuration)
+            while (elapsedTime < _fadeDuration * 4)
             {
                 elapsedTime += Time.deltaTime;
 
-                blinkScreen.color = Color.Lerp(startColor, endColor, elapsedTime / _fadeDuration);
+                blinkScreen.color = Color.Lerp(startColor, endColor, elapsedTime / (_fadeDuration * 4));
 
                 yield return null;
             }
 
-            fadeScreen.color = endColor;
+            blinkScreen.color = endColor;
             yield return new WaitForSeconds(1);
 
             elapsedTime = 0f;
