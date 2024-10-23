@@ -87,7 +87,7 @@ namespace Game
             }
 
             yield return new WaitForSeconds(1);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         private IEnumerator Blink()

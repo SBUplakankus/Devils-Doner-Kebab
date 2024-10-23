@@ -40,6 +40,7 @@ namespace Player
             _endingStage = -1;
             ProgressGame();
             _ending = Ending.None;
+            Cursor.visible = false;
         }
 
         private void OnEnable()
