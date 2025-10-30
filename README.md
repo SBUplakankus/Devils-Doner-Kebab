@@ -83,7 +83,7 @@ Duration: *1 week*
 
 ## 🧱 Built With
 
-- 🎮 Unity (or specify your engine)
+- 🎮 Unity
 - 💻 C#
 - 🎨 Blender / custom 3D assets
 - 🎵 Original SFX and ambient design
