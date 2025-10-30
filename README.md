@@ -94,6 +94,4 @@ Duration: *1 week*
 
 🔗 [Play on Itch.io](https://massivemeltmedia.itch.io/devils-doner-kebab)
 
-[![Play on Itch.io](https://img.shields.io/badge/Play%20on-Itch.io-FA5C5C?logo=itch.io&logoColor=white)](https://yourgamepage.itch.io/)
-
 ---
